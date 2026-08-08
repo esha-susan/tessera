@@ -50,3 +50,24 @@ Raw output of `fetch_papers.py` — the input to Phase 1's extraction step.
 
 **Relationships:** AUTHORED_BY, AFFILIATED_WITH, CITES, PROPOSES, USES_METHOD,
 EVALUATED_ON, ADDRESSES, EXTENDS, APPLIED_TO
+
+## src/ingest/schema.py
+Defines the strict extraction schema (pydantic models for entities and
+relations, restricted to the fixed ontology) and the prompt that instructs
+the LLM to return only that JSON shape.
+**Concept:** `pydantic.Literal` types restrict a field to an exact set of
+allowed values — this is what actually enforces "only 6 entity types, only
+9 relation types" in code, not just as prompt instructions.
+
+## src/ingest/extract.py
+Loops over `data/raw_papers.json`, sends each paper's title/abstract to the
+LLM via `call_llm()`, validates the JSON response against the schema,
+retries up to 3 times on failure, and saves results incrementally to
+`data/extracted.json`.
+**Concept:** caching by document id and saving after every item (not just
+at the end) means a crash mid-run doesn't cost re-extracting (and re-paying
+for) everything already done — only the run resumes from where it stopped.
+
+## data/extracted.json
+Validated entities and relations per paper, output of `extract.py`. Input
+to Phase 2 (writing into Neo4j).

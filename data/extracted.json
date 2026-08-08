@@ -1,0 +1,2794 @@
+{
+  "2509.10467v1": {
+    "title": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Mengzheng Yang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yanfei Ren"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "David Osei Opoku"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Ruochang Li"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Peng Ren"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Chunxiao Xing"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Retrieval-augmented generation"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "DSRAG"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "question answering"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "semantic pruning"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "structured subgraph retrieval"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Mengzheng Yang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yanfei Ren",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "David Osei Opoku",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Ruochang Li",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Peng Ren",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Chunxiao Xing",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "DSRAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG",
+        "source_type": "Method",
+        "relation_type": "EXTENDS",
+        "target_entity": "Retrieval-augmented generation",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "semantic pruning",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "structured subgraph retrieval",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "question answering",
+        "target_type": "Task",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "2408.07611v2": {
+    "title": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Weijian Xie"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Xuefeng Liang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yuhui Liu"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Kaihua Ni"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Hong Cheng"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Zetian Hu"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "WeKnow-RAG"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Retrieval-Augmented Generation (RAG)"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "question answering"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "factual information"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "complex reasoning tasks"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Weijian Xie",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Xuefeng Liang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yuhui Liu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Kaihua Ni",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Hong Cheng",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Zetian Hu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "WeKnow-RAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "WeKnow-RAG",
+        "source_type": "Method",
+        "relation_type": "EXTENDS",
+        "target_entity": "Retrieval-Augmented Generation (RAG)",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "WeKnow-RAG",
+        "source_type": "Method",
+        "relation_type": "ADDRESSES",
+        "target_entity": "question answering",
+        "target_type": "Task",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "WeKnow-RAG",
+        "source_type": "Method",
+        "relation_type": "ADDRESSES",
+        "target_entity": "factual information",
+        "target_type": "Task",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "WeKnow-RAG",
+        "source_type": "Method",
+        "relation_type": "ADDRESSES",
+        "target_entity": "complex reasoning tasks",
+        "target_type": "Task",
+        "confidence": 0.6
+      }
+    ]
+  },
+  "2408.08535v1": {
+    "title": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Rong-Ching Chang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Jiawei Zhang"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "CommunityKG-RAG"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "fact-checking"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Rong-Ching Chang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Jiawei Zhang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "CommunityKG-RAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "fact-checking",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "CommunityKG-RAG",
+        "source_type": "Method",
+        "relation_type": "APPLIED_TO",
+        "target_entity": "fact-checking",
+        "target_type": "Task",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "2606.30093v1": {
+    "title": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Gianluca Bonifazi"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Christopher Buratti"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Michele Marchetti"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Federica Parlapiano"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Giulia Quaglieri"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Davide Traini"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Domenico Ursino"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Luca Virgili"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "TIGRAG"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "RAG"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Question Answering"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Large Language Models"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Gianluca Bonifazi",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Christopher Buratti",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Michele Marchetti",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Federica Parlapiano",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Giulia Quaglieri",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Davide Traini",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Domenico Ursino",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Luca Virgili",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "TIGRAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "TIGRAG",
+        "source_type": "Method",
+        "relation_type": "EXTENDS",
+        "target_entity": "RAG",
+        "target_type": "Method",
+        "confidence": 0.8
+      },
+      {
+        "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Question Answering",
+        "target_type": "Task",
+        "confidence": 0.8
+      },
+      {
+        "source_entity": "TIGRAG",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "Large Language Models",
+        "target_type": "Method",
+        "confidence": 0.6
+      }
+    ]
+  },
+  "2606.28737v1": {
+    "title": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Thien-Qua-T-Nguyen"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Chi Hoang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Nguyen Tran"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Tri Le"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Khanh Truong"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Chinh Trong Nguyen"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "BGE-M3"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "FAISS"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "MTRAGEval"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Task A"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Task C"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "LLM"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "RAG"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "SemEval2026"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Thien-Qua-T-Nguyen",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Chi Hoang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Nguyen Tran",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Tri Le",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Khanh Truong",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Chinh Trong Nguyen",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "Task A",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "Task C",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "MTRAGEval",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "BGE-M3",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "FAISS",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "LLM",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "RAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "SemEval2026",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "2605.18769v1": {
+    "title": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Gibson Nkhata"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Uttamasha Anjally Oyshi"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Quan Mai"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Susan Gauch"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "ClusterRAG"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "LaMP"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Personalized Retrieval-Augmented Generation"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Gibson Nkhata",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Uttamasha Anjally Oyshi",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Quan Mai",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Susan Gauch",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "ClusterRAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "LaMP",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Personalized Retrieval-Augmented Generation",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ClusterRAG",
+        "source_type": "Method",
+        "relation_type": "APPLIED_TO",
+        "target_entity": "Personalized Retrieval-Augmented Generation",
+        "target_type": "Task",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "2601.17692v1": {
+    "title": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yunhan Li"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Mingjie Xie"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Gaoli Kang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Zihan Gong"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Gengshen Wu"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Min Yang"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Generalized Reinforcement Policy Optimization"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Multi-Agent Query Understanding System"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "LLM Reranker"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "CSAID"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "STARD"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "statute retrieval"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Retrieval-augmented generation"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yunhan Li",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Mingjie Xie",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Gaoli Kang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Zihan Gong",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Gengshen Wu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Min Yang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "Generalized Reinforcement Policy Optimization",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "Multi-Agent Query Understanding System",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "LLM Reranker",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "CSAID",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "STARD",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "statute retrieval",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+        "source_type": "Paper",
+        "relation_type": "EXTENDS",
+        "target_entity": "Retrieval-augmented generation",
+        "target_type": "Method",
+        "confidence": 0.6
+      }
+    ]
+  },
+  "2502.06864v1": {
+    "title": "Knowledge Graph-Guided Retrieval Augmented Generation",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "Knowledge Graph-Guided Retrieval Augmented Generation"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Xiangrong Zhu"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yuexiang Xie"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yi Liu"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yaliang Li"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Wei Hu"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "KG$^2$RAG"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "RAG"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "HotpotQA"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "question answering"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Xiangrong Zhu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yuexiang Xie",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yi Liu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yaliang Li",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Wei Hu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "KG$^2$RAG",
+        "source_type": "Method",
+        "relation_type": "EXTENDS",
+        "target_entity": "RAG",
+        "target_type": "Method",
+        "confidence": 0.8
+      },
+      {
+        "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "KG$^2$RAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "HotpotQA",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "KG$^2$RAG",
+        "source_type": "Method",
+        "relation_type": "ADDRESSES",
+        "target_entity": "question answering",
+        "target_type": "Task",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "RAG",
+        "target_type": "Method",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "2506.16037v1": {
+    "title": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Xinyue Huang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Ziqi Lin"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Fang Sun"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Wenchao Zhang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Kejian Tong"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yunbo Liu"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "LLaMA 3"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "question answering"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Xinyue Huang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Ziqi Lin",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Fang Sun",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Wenchao Zhang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Kejian Tong",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yunbo Liu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "LLaMA 3",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "question answering",
+        "target_type": "Task",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "2510.01612v3": {
+    "title": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Lovely Yeswanth Panchumarthi"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Sumalatha Saleti"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Sai Prasad Gudari"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Atharva Negi"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Praveen Raj Budime"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Harsit Upadhya"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "BioBERT"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "FAISS"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "FLAN-T5"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "LoRA"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "PubMedQA"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "MedDialog"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "MedQuAD"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "biomedical question answering"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "ColBERT"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "MonoT5"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "BM25"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Lovely Yeswanth Panchumarthi",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Sumalatha Saleti",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Sai Prasad Gudari",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Atharva Negi",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Praveen Raj Budime",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Harsit Upadhya",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "BioBERT",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "FAISS",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "FLAN-T5",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "LoRA",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "PubMedQA",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "ColBERT",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "MonoT5",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "BM25",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "biomedical question answering",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "MedDialog",
+        "target_type": "Dataset",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "MedQuAD",
+        "target_type": "Dataset",
+        "confidence": 0.6
+      }
+    ]
+  },
+  "2601.05254v3": {
+    "title": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Wenbiao Tao"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Xinyuan Li"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yunshi Lan"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Weining Qian"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "TagRAG"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "GraphRAG"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Retrieval-Augmented Generation"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "UltraDomain"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Wenbiao Tao",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Xinyuan Li",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yunshi Lan",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Weining Qian",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "TagRAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "UltraDomain",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "TagRAG",
+        "source_type": "Method",
+        "relation_type": "EXTENDS",
+        "target_entity": "GraphRAG",
+        "target_type": "Method",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "TagRAG",
+        "source_type": "Method",
+        "relation_type": "EXTENDS",
+        "target_entity": "Retrieval-Augmented Generation",
+        "target_type": "Method",
+        "confidence": 0.6
+      }
+    ]
+  },
+  "2509.21336v1": {
+    "title": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Guohang Yan"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yue Zhang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Pinlong Cai"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Ding Wang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Song Mao"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Hongwei Zhang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yaoze Zhang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Hairong Zhang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Xinyu Cai"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Botian Shi"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "HetaRAG"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Retrieval-augmented generation (RAG)"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "private, domain-specific corpora"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "vector database"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "knowledge graphs"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "full-text indexes"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "relational engines"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "MySQL"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Guohang Yan",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yue Zhang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Pinlong Cai",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Ding Wang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Song Mao",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Hongwei Zhang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yaoze Zhang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Hairong Zhang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Xinyu Cai",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Botian Shi",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "HetaRAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "HetaRAG",
+        "source_type": "Method",
+        "relation_type": "EXTENDS",
+        "target_entity": "Retrieval-augmented generation (RAG)",
+        "target_type": "Method",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "HetaRAG",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "vector database",
+        "target_type": "Method",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "HetaRAG",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "knowledge graphs",
+        "target_type": "Method",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "HetaRAG",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "full-text indexes",
+        "target_type": "Method",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "HetaRAG",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "relational engines",
+        "target_type": "Method",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "HetaRAG",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "MySQL",
+        "target_type": "Method",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "HetaRAG",
+        "source_type": "Method",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "private, domain-specific corpora",
+        "target_type": "Dataset",
+        "confidence": 0.6
+      }
+    ]
+  },
+  "2410.15801v1": {
+    "title": "Improve Dense Passage Retrieval with Entailment Tuning",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "Improve Dense Passage Retrieval with Entailment Tuning"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Lu Dai"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Hao Liu"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Hui Xiong"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "entailment tuning"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "open-domain question answering"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "retrieval-augmented generation"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "NLI tasks"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "Improve Dense Passage Retrieval with Entailment Tuning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Lu Dai",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Improve Dense Passage Retrieval with Entailment Tuning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Hao Liu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Improve Dense Passage Retrieval with Entailment Tuning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Hui Xiong",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Improve Dense Passage Retrieval with Entailment Tuning",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "entailment tuning",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Improve Dense Passage Retrieval with Entailment Tuning",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "open-domain question answering",
+        "target_type": "Task",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "Improve Dense Passage Retrieval with Entailment Tuning",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "retrieval-augmented generation",
+        "target_type": "Task",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "Improve Dense Passage Retrieval with Entailment Tuning",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "NLI tasks",
+        "target_type": "Task",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "entailment tuning",
+        "source_type": "Method",
+        "relation_type": "APPLIED_TO",
+        "target_entity": "open-domain question answering",
+        "target_type": "Task",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "entailment tuning",
+        "source_type": "Method",
+        "relation_type": "APPLIED_TO",
+        "target_entity": "retrieval-augmented generation",
+        "target_type": "Task",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "entailment tuning",
+        "source_type": "Method",
+        "relation_type": "APPLIED_TO",
+        "target_entity": "NLI tasks",
+        "target_type": "Task",
+        "confidence": 0.6
+      }
+    ]
+  },
+  "2607.16603v1": {
+    "title": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Thuong-Hieu Ngo"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Hoang-Trung Nguyen"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Huu-Dong Nguyen"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Xuan-Bach Le"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Le-Dung Nguyen"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Quang-Thanh Tran"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Ha-Thanh Nguyen"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Thi-Hai-Yen Vuong"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Legal Case Retrieval"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Legal Case Entailment"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Statute Law Retrieval and Entailment"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Legal Textual Entailment"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Legal Judgment Prediction"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "BM25"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "T5"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "LLM"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "CRF"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "COLIEE 2026"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Thuong-Hieu Ngo",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Hoang-Trung Nguyen",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Huu-Dong Nguyen",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Xuan-Bach Le",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Le-Dung Nguyen",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Quang-Thanh Tran",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Ha-Thanh Nguyen",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Thi-Hai-Yen Vuong",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "COLIEE 2026",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Legal Case Retrieval",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Legal Case Entailment",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Statute Law Retrieval and Entailment",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Legal Textual Entailment",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Legal Judgment Prediction",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "BM25",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "T5",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "LLM",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "CRF",
+        "target_type": "Method",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "2604.20666v1": {
+    "title": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Ioannis E. Livieris"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Athanasios Koursaris"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Alexandra Apostolopoulou"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Konstantinos Kanaris Dimitris Tsakalidis"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "George Domalis"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "ORPHEAS"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "retrieval-augmented generation"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Ioannis E. Livieris",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Athanasios Koursaris",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Alexandra Apostolopoulou",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Konstantinos Kanaris Dimitris Tsakalidis",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "George Domalis",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ORPHEAS",
+        "source_type": "Method",
+        "relation_type": "PROPOSES",
+        "target_entity": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+        "target_type": "Paper",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "retrieval-augmented generation",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "ORPHEAS",
+        "source_type": "Method",
+        "relation_type": "APPLIED_TO",
+        "target_entity": "retrieval-augmented generation",
+        "target_type": "Task",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "2603.06290v1": {
+    "title": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Giovanni Servedio"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Potito Aghilar"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Alessio Mattiace"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Gianni Carmosino"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Francesco Musicco"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Gabriele Conte"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Vito Walter Anelli"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Tommaso Di Noia"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Francesco Maria Donini"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Graph Retrieval-Augmented Generation"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Online Deep Visual Refinement"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Multimodal Language Models"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "PersonalQA-71-100"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Personal AI"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Giovanni Servedio",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Potito Aghilar",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Alessio Mattiace",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Gianni Carmosino",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Francesco Musicco",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Gabriele Conte",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Vito Walter Anelli",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Tommaso Di Noia",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Francesco Maria Donini",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "PROPOSES",
+        "target_entity": "EpisTwin",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "Multimodal Language Models",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "Graph Retrieval-Augmented Generation",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "Online Deep Visual Refinement",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "PersonalQA-71-100",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Personal AI",
+        "target_type": "Task",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "2504.01309v1": {
+    "title": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Lingxiao Guan"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Yuanhao Huang"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Jie Liu"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Retrieval Augmented Generation"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "layerwise summarization"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "Question Answering"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "biomedical question answering"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Lingxiao Guan",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Yuanhao Huang",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Jie Liu",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "layerwise summarization",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "EXTENDS",
+        "target_entity": "Retrieval Augmented Generation",
+        "target_type": "Method",
+        "confidence": 0.8
+      },
+      {
+        "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "Question Answering",
+        "target_type": "Task",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "biomedical question answering",
+        "target_type": "Task",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "2603.05698v2": {
+    "title": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Hazem Amamou"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "St\u00e9phane Gagnon"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Alan Davoust"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Anderson R. Avila"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "Retrieval-Augmented Generation"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "Retrieval-Augmented Generation Benchmark"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "GraphRAG"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Hazem Amamou",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "St\u00e9phane Gagnon",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Alan Davoust",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Anderson R. Avila",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "Retrieval-Augmented Generation",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+        "source_type": "Paper",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "Retrieval-Augmented Generation Benchmark",
+        "target_type": "Dataset",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+        "source_type": "Paper",
+        "relation_type": "USES_METHOD",
+        "target_entity": "GraphRAG",
+        "target_type": "Method",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "2505.08450v2": {
+    "title": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Kazuki Hayashi"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Hidetaka Kamigaito"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Shinya Kouda"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Taro Watanabe"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "IterKey"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "BM25"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "question answering"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Kazuki Hayashi",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Hidetaka Kamigaito",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Shinya Kouda",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Taro Watanabe",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "IterKey",
+        "source_type": "Method",
+        "relation_type": "PROPOSES",
+        "target_entity": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
+        "target_type": "Paper",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "IterKey",
+        "source_type": "Method",
+        "relation_type": "USES_METHOD",
+        "target_entity": "BM25",
+        "target_type": "Method",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "ADDRESSES",
+        "target_entity": "question answering",
+        "target_type": "Task",
+        "confidence": 0.8
+      },
+      {
+        "source_entity": "IterKey",
+        "source_type": "Method",
+        "relation_type": "APPLIED_TO",
+        "target_entity": "question answering",
+        "target_type": "Task",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "2502.01113v3": {
+    "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+    "entities": [
+      {
+        "entity_type": "Paper",
+        "canonical_name": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Linhao Luo"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Zicheng Zhao"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Gholamreza Haffari"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Dinh Phung"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Chen Gong"
+      },
+      {
+        "entity_type": "Author",
+        "canonical_name": "Shirui Pan"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "GFM-RAG"
+      },
+      {
+        "entity_type": "Method",
+        "canonical_name": "GraphRAG"
+      },
+      {
+        "entity_type": "Task",
+        "canonical_name": "question answering"
+      },
+      {
+        "entity_type": "Dataset",
+        "canonical_name": "HotpotQA"
+      }
+    ],
+    "relations": [
+      {
+        "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Linhao Luo",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Zicheng Zhao",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Gholamreza Haffari",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Dinh Phung",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Chen Gong",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+        "source_type": "Paper",
+        "relation_type": "AUTHORED_BY",
+        "target_entity": "Shirui Pan",
+        "target_type": "Author",
+        "confidence": 1.0
+      },
+      {
+        "source_entity": "GFM-RAG",
+        "source_type": "Method",
+        "relation_type": "EXTENDS",
+        "target_entity": "GraphRAG",
+        "target_type": "Method",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "GFM-RAG",
+        "source_type": "Method",
+        "relation_type": "EVALUATED_ON",
+        "target_entity": "HotpotQA",
+        "target_type": "Dataset",
+        "confidence": 0.6
+      },
+      {
+        "source_entity": "GFM-RAG",
+        "source_type": "Method",
+        "relation_type": "ADDRESSES",
+        "target_entity": "question answering",
+        "target_type": "Task",
+        "confidence": 0.6
+      }
+    ]
+  }
+}
