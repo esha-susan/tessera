@@ -38,19 +38,6 @@ Python's built-in `xml.etree.ElementTree`.
 ## data/raw_papers.json
 Raw output of `fetch_papers.py` — the input to Phase 1's extraction step.
 
----
-
-*(new entries added here as each phase is built)*
-
----
-
-## Ontology
-
-**Entities:** Paper, Author, Institution, Method, Dataset, Task
-
-**Relationships:** AUTHORED_BY, AFFILIATED_WITH, CITES, PROPOSES, USES_METHOD,
-EVALUATED_ON, ADDRESSES, EXTENDS, APPLIED_TO
-
 ## src/ingest/schema.py
 Defines the strict extraction schema (pydantic models for entities and
 relations, restricted to the fixed ontology) and the prompt that instructs
@@ -64,10 +51,27 @@ Loops over `data/raw_papers.json`, sends each paper's title/abstract to the
 LLM via `call_llm()`, validates the JSON response against the schema,
 retries up to 3 times on failure, and saves results incrementally to
 `data/extracted.json`.
-**Concept:** caching by document id and saving after every item (not just
-at the end) means a crash mid-run doesn't cost re-extracting (and re-paying
-for) everything already done — only the run resumes from where it stopped.
+**Concept:** caching by document id, saved after every item, means a crash
+mid-run doesn't cost re-extracting (and re-paying for) everything already
+done — only the run resumes from where it stopped. Also: pydantic's
+`Literal` validation caught a real near-miss on the first run (Llama
+returned `"ADDRESS"` instead of `"ADDRESSES"`), which triggered the retry
+loop and succeeded on the 2nd attempt — schema validation working exactly
+as intended, not just in theory.
 
 ## data/extracted.json
 Validated entities and relations per paper, output of `extract.py`. Input
 to Phase 2 (writing into Neo4j).
+
+---
+
+*(new entries added here as each phase is built)*
+
+---
+
+## Ontology
+
+**Entities:** Paper, Author, Institution, Method, Dataset, Task
+
+**Relationships:** AUTHORED_BY, AFFILIATED_WITH, CITES, PROPOSES, USES_METHOD,
+EVALUATED_ON, ADDRESSES, EXTENDS, APPLIED_TO
