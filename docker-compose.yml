@@ -1,0 +1,26 @@
+services:
+  neo4j:
+    image: neo4j:5.24
+    container_name: tessera-neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/REDACTED
+      - NEO4J_PLUGINS=["apoc"]
+    volumes:
+      - neo4j_data:/data
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: tessera-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=tessera
+      - POSTGRES_PASSWORD=REDACTED
+      - POSTGRES_DB=tessera
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+volumes:
+  neo4j_data:
+  pg_data:

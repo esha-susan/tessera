@@ -1,0 +1,12 @@
+cat > requirements.txt << 'EOF'
+anthropic
+neo4j
+psycopg[binary]
+pgvector
+fastapi
+uvicorn
+python-dotenv
+pydantic
+tiktoken
+EOF
+pip install -r requirements.txt
