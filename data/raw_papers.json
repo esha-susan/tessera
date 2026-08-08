@@ -1,0 +1,273 @@
+[
+  {
+    "arxiv_id": "2509.10467v1",
+    "title": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
+    "abstract": "Current general-purpose large language models (LLMs) commonly exhibit knowledge hallucination and insufficient domain-specific adaptability in domain-specific tasks, limiting their effectiveness in specialized question answering scenarios. Retrieval-augmented generation (RAG) effectively tackles these challenges by integrating external knowledge to enhance accuracy and relevance. However, traditional RAG still faces limitations in domain knowledge accuracy and context modeling.To enhance domain-specific question answering performance, this work focuses on a graph-based RAG framework, emphasizing the critical role of knowledge graph quality during the generation process. We propose DSRAG (Domain-Specific RAG), a multimodal knowledge graph-driven retrieval-augmented generation framework designed for domain-specific applications. Our approach leverages domain-specific documents as the primary knowledge source, integrating heterogeneous information such as text, images, and tables to construct a multimodal knowledge graph covering both conceptual and instance layers. Building on this foundation, we introduce semantic pruning and structured subgraph retrieval mechanisms, combining knowledge graph context and vector retrieval results to guide the language model towards producing more reliable responses. Evaluations using the Langfuse multidimensional scoring mechanism show that our method excels in domain-specific question answering, validating the efficacy of integrating multimodal knowledge graphs with retrieval-augmented generation.",
+    "authors": [
+      "Mengzheng Yang",
+      "Yanfei Ren",
+      "David Osei Opoku",
+      "Ruochang Li",
+      "Peng Ren",
+      "Chunxiao Xing"
+    ],
+    "published": "2025-08-22"
+  },
+  {
+    "arxiv_id": "2408.07611v2",
+    "title": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
+    "abstract": "Large Language Models (LLMs) have greatly contributed to the development of adaptive intelligent agents and are positioned as an important way to achieve Artificial General Intelligence (AGI). However, LLMs are prone to produce factually incorrect information and often produce \"phantom\" content that undermines their reliability, which poses a serious challenge for their deployment in real-world scenarios. Enhancing LLMs by combining external databases and information retrieval mechanisms is an effective path. To address the above challenges, we propose a new approach called WeKnow-RAG, which integrates Web search and Knowledge Graphs into a \"Retrieval-Augmented Generation (RAG)\" system. First, the accuracy and reliability of LLM responses are improved by combining the structured representation of Knowledge Graphs with the flexibility of dense vector retrieval. WeKnow-RAG then utilizes domain-specific knowledge graphs to satisfy a variety of queries and domains, thereby improving performance on factual information and complex reasoning tasks by employing multi-stage web page retrieval techniques using both sparse and dense retrieval methods. Our approach effectively balances the efficiency and accuracy of information retrieval, thus improving the overall retrieval process. Finally, we also integrate a self-assessment mechanism for the LLM to evaluate the trustworthiness of the answers it generates. Our approach proves its outstanding effectiveness in a wide range of offline experiments and online submissions.",
+    "authors": [
+      "Weijian Xie",
+      "Xuefeng Liang",
+      "Yuhui Liu",
+      "Kaihua Ni",
+      "Hong Cheng",
+      "Zetian Hu"
+    ],
+    "published": "2024-08-14"
+  },
+  {
+    "arxiv_id": "2408.08535v1",
+    "title": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking",
+    "abstract": "Despite advancements in Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) systems, their effectiveness is often hindered by a lack of integration with entity relationships and community structures, limiting their ability to provide contextually rich and accurate information retrieval for fact-checking. We introduce CommunityKG-RAG (Community Knowledge Graph-Retrieval Augmented Generation), a novel zero-shot framework that integrates community structures within Knowledge Graphs (KGs) with RAG systems to enhance the fact-checking process. Capable of adapting to new domains and queries without additional training, CommunityKG-RAG utilizes the multi-hop nature of community structures within KGs to significantly improve the accuracy and relevance of information retrieval. Our experimental results demonstrate that CommunityKG-RAG outperforms traditional methods, representing a significant advancement in fact-checking by offering a robust, scalable, and efficient solution.",
+    "authors": [
+      "Rong-Ching Chang",
+      "Jiawei Zhang"
+    ],
+    "published": "2024-08-16"
+  },
+  {
+    "arxiv_id": "2606.30093v1",
+    "title": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
+    "abstract": "Retrieval-Augmented Generation (RAG) mitigates hallucinations in Large Language Models (LLMs) by grounding the generation process on external knowledge. However, standard RAG approaches struggle with multi-hop reasoning. While recent graph-based RAG methods improve the retrieval of interconnected chunks, they often rely on computationally expensive and error-prone LLM-based extraction pipelines. To address these issues, we propose TIGRAG (Token-Induced GraphRAG), an efficient graph-augmented RAG framework based on a token co-occurrence Knowledge Graph. TIGRAG directly models topological relationships between tokens using sliding-window co-occurrence statistics, thus enabling scalable graph construction. During inference, it combines graph-based semantic expansion and neural reranking to retrieve interconnected evidence for multi-hop reasoning. Specifically, it introduces an iterative entity-driven retrieval strategy that progressively expands the query using bridging entities extracted from previously retrieved contexts. We evaluated TIGRAG on three widely adopted multi-hop Question Answering (QA) benchmarks. Experimental results demonstrated that our framework consistently outperforms dense retrieval and graph-based RAG methods in both retrieval and downstream QA tasks, while substantially reducing indexing time, inference latency, and prompt footprint.",
+    "authors": [
+      "Gianluca Bonifazi",
+      "Christopher Buratti",
+      "Michele Marchetti",
+      "Federica Parlapiano",
+      "Giulia Quaglieri",
+      "Davide Traini",
+      "Domenico Ursino",
+      "Luca Virgili"
+    ],
+    "published": "2026-06-29"
+  },
+  {
+    "arxiv_id": "2606.28737v1",
+    "title": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
+    "abstract": "We introduce 5ting, our system for the SemEval2026 Task 8 (MTRAGEval), which evaluates multi-turn Retrieval Augmented Generation (RAG) systems. Multi turn RAG involves context drift, under specification, and hallucination risk. Our system combines BGE-M3 dense retrieval with FAISS indexing, dual-query merged retrieval, and LLM based reranking, followed by role separated generation constrained to retrieved evidence. The retriever achieved nDCG@5 = 0.4719 in Task A, while the end to end system ranked in Task C with a harmonic score of 0.5597 and RL_F = 0.7692.",
+    "authors": [
+      " Thien-Qua-T-Nguyen",
+      "Chi Hoang",
+      "Nguyen Tran",
+      "Tri Le",
+      "Khanh Truong",
+      "Chinh Trong Nguyen"
+    ],
+    "published": "2026-06-27"
+  },
+  {
+    "arxiv_id": "2605.18769v1",
+    "title": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
+    "abstract": "Personalized Retrieval-Augmented Generation (RAG) relies on accurately selecting user-relevant documents. In practice, existing RAG approaches often suffer from high retrieval costs and overlook that collaborative signals from similar users can enhance personalized generation for the current user. We propose ClusterRAG, a Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation. ClusterRAG represents users through their profile documents, organizes users into semantically coherent clusters using density-based clustering, and performs retrieval at both the cluster and document levels via cluster-level similarity and fine-grained ranking. Extensive experiments on the LaMP benchmark demonstrate that jointly leveraging the target user's profile and profiles from top similar users consistently yields the best performance across diverse tasks. Further analysis shows that ClusterRAG integrates seamlessly with different dense retrievers and rankers, and remains effective when paired with both fine-tuned and zero-shot language models.",
+    "authors": [
+      "Gibson Nkhata",
+      "Uttamasha Anjally Oyshi",
+      "Quan Mai",
+      "Susan Gauch"
+    ],
+    "published": "2026-04-14"
+  },
+  {
+    "arxiv_id": "2601.17692v1",
+    "title": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
+    "abstract": "Statute retrieval is essential for legal assistance and judicial decision support, yet real-world legal queries are often implicit, multi-issue, and expressed in colloquial or underspecified forms. These characteristics make it difficult for conventional retrieval-augmented generation pipelines to recover the statutory elements required for accurate retrieval. Dense retrievers focus primarily on the literal surface form of the query, whereas lightweight rerankers lack the legal-reasoning capacity needed to assess statutory applicability. We present LegalMALR, a retrieval framework that integrates a Multi-Agent Query Understanding System (MAS) with a zero-shot large-language-model-based reranking module (LLM Reranker). MAS generates diverse, legally grounded reformulations and conducts iterative dense retrieval to broaden candidate coverage. To stabilise the stochastic behaviour of LLM-generated rewrites, we optimise a unified MAS policy using Generalized Reinforcement Policy Optimization(GRPO). The accumulated candidate set is subsequently evaluated by the LLM Reranker, which performs natural-language legal reasoning to produce the final ranking. We further construct CSAID, a dataset of 118 difficult Chinese legal queries annotated with multiple statutory labels, and evaluate LegalMALR on both CSAID and the public STARD benchmark. Experiments show that LegalMALR substantially outperforms strong Retrieval-augmented generation(RAG) baselines in both in-distribution and out-of-distribution settings, demonstrating the effectiveness of combining multi-perspective query interpretation, reinforcement-based policy optimisation, and large-model reranking for statute retrieval.",
+    "authors": [
+      "Yunhan Li",
+      "Mingjie Xie",
+      "Gaoli Kang",
+      "Zihan Gong",
+      "Gengshen Wu",
+      "Min Yang"
+    ],
+    "published": "2026-01-25"
+  },
+  {
+    "arxiv_id": "2502.06864v1",
+    "title": "Knowledge Graph-Guided Retrieval Augmented Generation",
+    "abstract": "Retrieval-augmented generation (RAG) has emerged as a promising technology for addressing hallucination issues in the responses generated by large language models (LLMs). Existing studies on RAG primarily focus on applying semantic-based approaches to retrieve isolated relevant chunks, which ignore their intrinsic relationships. In this paper, we propose a novel Knowledge Graph-Guided Retrieval Augmented Generation (KG$^2$RAG) framework that utilizes knowledge graphs (KGs) to provide fact-level relationships between chunks, improving the diversity and coherence of the retrieved results. Specifically, after performing a semantic-based retrieval to provide seed chunks, KG$^2$RAG employs a KG-guided chunk expansion process and a KG-based chunk organization process to deliver relevant and important knowledge in well-organized paragraphs. Extensive experiments conducted on the HotpotQA dataset and its variants demonstrate the advantages of KG$^2$RAG compared to existing RAG-based approaches, in terms of both response quality and retrieval quality.",
+    "authors": [
+      "Xiangrong Zhu",
+      "Yuexiang Xie",
+      "Yi Liu",
+      "Yaliang Li",
+      "Wei Hu"
+    ],
+    "published": "2025-02-08"
+  },
+  {
+    "arxiv_id": "2506.16037v1",
+    "title": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
+    "abstract": "This paper presents a novel Retrieval-Augmented Generation (RAG) framework tailored for complex question answering tasks, addressing challenges in multi-hop reasoning and contextual understanding across lengthy documents. Built upon LLaMA 3, the framework integrates a dense retrieval module with advanced context fusion and multi-hop reasoning mechanisms, enabling more accurate and coherent response generation. A joint optimization strategy combining retrieval likelihood and generation cross-entropy improves the model's robustness and adaptability. Experimental results show that the proposed system outperforms existing retrieval-augmented and generative baselines, confirming its effectiveness in delivering precise, contextually grounded answers.",
+    "authors": [
+      "Xinyue Huang",
+      "Ziqi Lin",
+      "Fang Sun",
+      "Wenchao Zhang",
+      "Kejian Tong",
+      "Yunbo Liu"
+    ],
+    "published": "2025-06-19"
+  },
+  {
+    "arxiv_id": "2510.01612v3",
+    "title": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
+    "abstract": "The rapidly growth of biomedical literature creates challenges acquiring specific medical information. Current biomedical question-answering systems primarily focus on short-form answers, failing to provide comprehensive explanations necessary for clinical decision-making. We present RAG-BioQA, a retrieval-augmented generation framework for long-form biomedical question answering. Our system integrates BioBERT embeddings with FAISS indexing for retrieval and a LoRA fine-tuned FLAN-T5 model for answer generation. We train on 181k QA pairs from PubMedQA, MedDialog, and MedQuAD, and evaluate on a held-out PubMedQA test set. We compare four retrieval strategies: dense retrieval (FAISS), BM25, ColBERT, and MonoT5. Our results show that domain-adapted dense retrieval outperforms zero-shot neural re-rankers, with the best configuration achieving 0.24 BLEU-1 and 0.29 ROUGE-1. Fine-tuning improves BERTScore by 81\\% over the base model. We release our framework to support reproducible biomedical QA research.",
+    "authors": [
+      "Lovely Yeswanth Panchumarthi",
+      "Sumalatha Saleti",
+      "Sai Prasad Gudari",
+      "Atharva Negi",
+      "Praveen Raj Budime",
+      "Harsit Upadhya"
+    ],
+    "published": "2025-10-02"
+  },
+  {
+    "arxiv_id": "2601.05254v3",
+    "title": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+    "abstract": "Retrieval-Augmented Generation enhances language models by retrieving external knowledge to support informed and grounded responses. However, traditional RAG methods rely on fragment-level retrieval, limiting their ability to address query-focused summarization queries. GraphRAG introduces a graph-based paradigm for global knowledge reasoning, yet suffers from inefficiencies in information extraction, costly resource consumption, and poor adaptability to incremental updates. To overcome these limitations, we propose TagRAG, a tag-guided hierarchical knowledge graph RAG framework designed for efficient global reasoning and scalable graph maintenance. TagRAG introduces two key components: (1) Tag Knowledge Graph Construction, which extracts object tags and their relationships from documents and organizes them into hierarchical domain tag chains for structured knowledge representation, and (2) Tag-Guided Retrieval-Augmented Generation, which retrieves domain-centric tag chains to localize and synthesize relevant knowledge during inference. This design significantly adapts to smaller language models, improves retrieval granularity, and supports efficient knowledge increment. Extensive experiments on UltraDomain datasets spanning Agriculture, Computer Science, Law, and cross-domain settings demonstrate that TagRAG achieves an average winning rate of 78.36% against baselines while maintaining about 14.6x construction and 1.9x retrieval efficiency compared with GraphRAG.",
+    "authors": [
+      "Wenbiao Tao",
+      "Xinyuan Li",
+      "Yunshi Lan",
+      "Weining Qian"
+    ],
+    "published": "2025-10-18"
+  },
+  {
+    "arxiv_id": "2509.21336v1",
+    "title": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
+    "abstract": "Retrieval-augmented generation (RAG) has become a dominant paradigm for mitigating knowledge hallucination and staleness in large language models (LLMs) while preserving data security. By retrieving relevant evidence from private, domain-specific corpora and injecting it into carefully engineered prompts, RAG delivers trustworthy responses without the prohibitive cost of fine-tuning. Traditional retrieval-augmented generation (RAG) systems are text-only and often rely on a single storage backend, most commonly a vector database. In practice, this monolithic design suffers from unavoidable trade-offs: vector search captures semantic similarity yet loses global context; knowledge graphs excel at relational precision but struggle with recall; full-text indexes are fast and exact yet semantically blind; and relational engines such as MySQL provide strong transactional guarantees but no semantic understanding. We argue that these heterogeneous retrieval paradigms are complementary, and propose a principled fusion scheme to orchestrate them synergistically, mitigating the weaknesses of any single modality. In this work we introduce HetaRAG, a hybrid, deep-retrieval augmented generation framework that orchestrates cross-modal evidence from heterogeneous data stores. We plan to design a system that unifies vector indices, knowledge graphs, full-text engines, and structured databases into a single retrieval plane, dynamically routing and fusing evidence to maximize recall, precision, and contextual fidelity. To achieve this design goal, we carried out preliminary explorations and constructed an initial RAG pipeline; this technical report provides a brief overview. The partial code is available at https://github.com/KnowledgeXLab/HetaRAG.",
+    "authors": [
+      "Guohang Yan",
+      "Yue Zhang",
+      "Pinlong Cai",
+      "Ding Wang",
+      "Song Mao",
+      "Hongwei Zhang",
+      "Yaoze Zhang",
+      "Hairong Zhang",
+      "Xinyu Cai",
+      "Botian Shi"
+    ],
+    "published": "2025-09-12"
+  },
+  {
+    "arxiv_id": "2410.15801v1",
+    "title": "Improve Dense Passage Retrieval with Entailment Tuning",
+    "abstract": "Retrieval module can be plugged into many downstream NLP tasks to improve their performance, such as open-domain question answering and retrieval-augmented generation. The key to a retrieval system is to calculate relevance scores to query and passage pairs. However, the definition of relevance is often ambiguous. We observed that a major class of relevance aligns with the concept of entailment in NLI tasks. Based on this observation, we designed a method called entailment tuning to improve the embedding of dense retrievers. Specifically, we unify the form of retrieval data and NLI data using existence claim as a bridge. Then, we train retrievers to predict the claims entailed in a passage with a variant task of masked prediction. Our method can be efficiently plugged into current dense retrieval methods, and experiments show the effectiveness of our method.",
+    "authors": [
+      "Lu Dai",
+      "Hao Liu",
+      "Hui Xiong"
+    ],
+    "published": "2024-10-21"
+  },
+  {
+    "arxiv_id": "2607.16603v1",
+    "title": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
+    "abstract": "This paper presents the methodologies and results of the NOWJ team's participation across all five tasks of the COLIEE 2026 competition. For Task 1 (Legal Case Retrieval), we propose a four-stage pipeline comprising candidate filtering, dense retrieval with complementary embedding models, cross-encoder reranking via fine-tuned generative rerankers and MLP-based pairwise classification, and adaptive per-query cutoff prediction. For Task 2 (Legal Case Entailment), we combine BM25 filtering, T5-based reranking, and LLM-based entailment verification with consensus ensemble. For Task 3 (Statute Law Retrieval and Entailment), we adopt a retrieval-augmented generation framework with dense retrieval, attention-based reranking, and few-shot-prompted LLM reasoning. For Task 4 (Legal Textual Entailment), we introduce a dynamic routing pipeline that classifies query difficulty and dispatches cases to either a balanced few-shot solver or a structured zero-shot chain-of-thought solver. For the Pilot Task (Legal Judgment Prediction), we combine hierarchical transformers with CRF layers, argument relation mining, and probabilistic argumentation graph reasoning.",
+    "authors": [
+      "Thuong-Hieu Ngo",
+      "Hoang-Trung Nguyen",
+      "Huu-Dong Nguyen",
+      "Xuan-Bach Le",
+      "Le-Dung Nguyen",
+      "Quang-Thanh Tran",
+      "Ha-Thanh Nguyen",
+      "Thi-Hai-Yen Vuong"
+    ],
+    "published": "2026-07-18"
+  },
+  {
+    "arxiv_id": "2604.20666v1",
+    "title": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
+    "abstract": "Effective retrieval-augmented generation across bilingual Greek--English applications requires embedding models capable of capturing both domain-specific semantic relationships and cross-lingual semantic alignment. Existing multilingual embedding models distribute their representational capacity across numerous languages, limiting their optimization for Greek and failing to encode the morphological complexity and domain-specific terminological structures inherent in Greek text. In this work, we propose ORPHEAS, a specialized Greek--English embedding model for bilingual retrieval-augmented generation. ORPHEAS is trained with a high quality dataset generated by a knowledge graph-based fine-tuning methodology which is applied to a diverse multi-domain corpus, which enables language-agnostic semantic representations. The numerical experiments across monolingual and cross-lingual retrieval benchmarks reveal that ORPHEAS outperforms state-of-the-art multilingual embedding models, demonstrating that domain-specialized fine-tuning on morphologically complex languages does not compromise cross-lingual retrieval capability.",
+    "authors": [
+      "Ioannis E. Livieris",
+      "Athanasios Koursaris",
+      "Alexandra Apostolopoulou",
+      "Konstantinos Kanaris Dimitris Tsakalidis",
+      "George Domalis"
+    ],
+    "published": "2026-04-22"
+  },
+  {
+    "arxiv_id": "2603.06290v1",
+    "title": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
+    "abstract": "Personal Artificial Intelligence is currently hindered by the fragmentation of user data across isolated silos. While Retrieval-Augmented Generation offers a partial remedy, its reliance on unstructured vector similarity fails to capture the latent semantic topology and temporal dependencies essential for holistic sensemaking. We introduce EpisTwin, a neuro-symbolic framework that grounds generative reasoning in a verifiable, user-centric Personal Knowledge Graph. EpisTwin leverages Multimodal Language Models to lift heterogeneous, cross-application data into semantic triples. At inference, EpisTwin enables complex reasoning over the personal semantic graph via an agentic coordinator that combines Graph Retrieval-Augmented Generation with Online Deep Visual Refinement, dynamically re-grounding symbolic entities in their raw visual context. We also introduce PersonalQA-71-100, a synthetic benchmark designed to simulate a realistic user's digital footprint and evaluate EpisTwin performance. Our framework demonstrates robust results across a suite of state-of-the-art judge models, offering a promising direction for trustworthy Personal AI.",
+    "authors": [
+      "Giovanni Servedio",
+      "Potito Aghilar",
+      "Alessio Mattiace",
+      "Gianni Carmosino",
+      "Francesco Musicco",
+      "Gabriele Conte",
+      "Vito Walter Anelli",
+      "Tommaso Di Noia",
+      "Francesco Maria Donini"
+    ],
+    "published": "2026-03-06"
+  },
+  {
+    "arxiv_id": "2504.01309v1",
+    "title": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
+    "abstract": "In Question Answering (QA), Retrieval Augmented Generation (RAG) has revolutionized performance in various domains. However, how to effectively capture multi-document relationships, particularly critical for biomedical tasks, remains an open question. In this work, we propose a novel method that utilizes propositional claims to construct a local knowledge graph from retrieved documents. Summaries are then derived via layerwise summarization from the knowledge graph to contextualize a small language model to perform QA. We achieved comparable or superior performance with our method over RAG baselines on several biomedical QA benchmarks. We also evaluated each individual step of our methodology over a targeted set of metrics, demonstrating its effectiveness.",
+    "authors": [
+      "Lingxiao Guan",
+      "Yuanhao Huang",
+      "Jie Liu"
+    ],
+    "published": "2025-04-02"
+  },
+  {
+    "arxiv_id": "2603.05698v2",
+    "title": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+    "abstract": "Retrieval-Augmented Generation (RAG) was introduced to enhance the capabilities of Large Language Models (LLMs) beyond their encoded prior knowledge. This is achieved by providing LLMs with an external source of knowledge, which helps reduce factual hallucinations and enables access to new information not available during pretraining. However, inconsistent retrieved information can negatively affect LLM responses. The Retrieval-Augmented Generation Benchmark (RGB) was introduced to evaluate the robustness of RAG systems under such conditions. In this work, we use the RGB corpus to evaluate LLMs in four scenarios: noise robustness, information integration, negative rejection, and counterfactual robustness. We perform a comparative analysis between the RGB RAG baseline and GraphRAG, a knowledge graph based retrieval system. We test three GraphRAG customizations to improve robustness. Results show improvements over the RGB baseline and provide insights for designing more reliable RAG systems for real world scenarios.",
+    "authors": [
+      "Hazem Amamou",
+      "St\u00e9phane Gagnon",
+      "Alan Davoust",
+      "Anderson R. Avila"
+    ],
+    "published": "2026-03-05"
+  },
+  {
+    "arxiv_id": "2505.08450v2",
+    "title": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
+    "abstract": "Retrieval-Augmented Generation (RAG) has emerged as a way to complement the in-context knowledge of Large Language Models (LLMs) by integrating external documents. However, real-world applications demand not only accuracy but also interpretability. While dense retrieval methods provide high accuracy, they lack interpretability; conversely, sparse retrieval methods offer transparency but often fail to capture the full intent of queries due to their reliance on keyword matching. To address these issues, we introduce IterKey, an LLM-driven iterative keyword generation framework that enhances RAG via sparse retrieval. IterKey consists of three LLM-driven stages: generating keywords for retrieval, generating answers based on retrieved documents, and validating the answers. If validation fails, the process iteratively repeats with refined keywords. Across four QA tasks, experimental results show that IterKey achieves 5% to 20% accuracy improvements over BM25-based RAG and simple baselines. Its performance is comparable to dense retrieval-based RAG and prior iterative query refinement methods using dense models. In summary, IterKey is a novel BM25-based approach leveraging LLMs to iteratively refine RAG, effectively balancing accuracy with interpretability.",
+    "authors": [
+      "Kazuki Hayashi",
+      "Hidetaka Kamigaito",
+      "Shinya Kouda",
+      "Taro Watanabe"
+    ],
+    "published": "2025-05-13"
+  },
+  {
+    "arxiv_id": "2502.01113v3",
+    "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+    "abstract": "Retrieval-augmented generation (RAG) has proven effective in integrating knowledge into large language models (LLMs). However, conventional RAGs struggle to capture complex relationships between pieces of knowledge, limiting their performance in intricate reasoning that requires integrating knowledge from multiple sources. Recently, graph-enhanced retrieval augmented generation (GraphRAG) builds graph structure to explicitly model these relationships, enabling more effective and efficient retrievers. Nevertheless, its performance is still hindered by the noise and incompleteness within the graph structure. To address this, we introduce GFM-RAG, a novel graph foundation model (GFM) for retrieval augmented generation. GFM-RAG is powered by an innovative graph neural network that reasons over graph structure to capture complex query-knowledge relationships. The GFM with 8M parameters undergoes a two-stage training process on large-scale datasets, comprising 60 knowledge graphs with over 14M triples and 700k documents. This results in impressive performance and generalizability for GFM-RAG, making it the first graph foundation model applicable to unseen datasets for retrieval without any fine-tuning required. Extensive experiments on three multi-hop QA datasets and seven domain-specific RAG datasets demonstrate that GFM-RAG achieves state-of-the-art performance while maintaining efficiency and alignment with neural scaling laws, highlighting its potential for further improvement.",
+    "authors": [
+      "Linhao Luo",
+      "Zicheng Zhao",
+      "Gholamreza Haffari",
+      "Dinh Phung",
+      "Chen Gong",
+      "Shirui Pan"
+    ],
+    "published": "2025-02-03"
+  }
+]
