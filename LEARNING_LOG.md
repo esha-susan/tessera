@@ -174,3 +174,20 @@ wasn't enough; the model needed to see the pattern once.
 **Verified**: all 3 query types (neighbors, extends_chain, shared_task)
 correctly resolve entities and return results matching the manual Cypher
 queries run earlier in the Neo4j browser.
+
+## src/generation/merge.py
+Ties everything together: routes the question, fetches from vector
+and/or graph paths, converts graph results into readable statements,
+assembles labeled context (PASSAGE vs GRAPH FACT, each with a citation
+id), generates an answer, and validates every citation the model used
+actually exists in the retrieved context — regenerating with a
+correction prompt if not. `answer_question()` is the single entry point
+the whole system funnels through.
+**Concept:** citation validation via regex extraction + set comparison —
+after generation, pull every [id] out of the answer text and check each
+one against the actual set of retrieved context ids. This is what turns
+"ask the model to cite sources" (which it can still get wrong) into "cite
+sources it's provably not allowed to invent."
+**Verified**: all 3 test questions produced correctly-cited, accurate
+answers on the first attempt, across both routes and a mixed
+graph+vector scenario.
