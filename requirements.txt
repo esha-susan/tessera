@@ -11,3 +11,4 @@ tiktoken
 EOF
 pip install -r requirements.txtgoogle-generativeai
 groqsentence-transformers
+sentence-transformers
