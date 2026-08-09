@@ -2,20 +2,6 @@
   "entities": [
     {
       "entity_type": "Paper",
-      "canonical_name": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
-      "aliases": [
-        "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
-      "aliases": [
-        "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering"
-      ]
-    },
-    {
-      "entity_type": "Paper",
       "canonical_name": "Improve Dense Passage Retrieval with Entailment Tuning",
       "aliases": [
         "Improve Dense Passage Retrieval with Entailment Tuning"
@@ -23,89 +9,9 @@
     },
     {
       "entity_type": "Paper",
-      "canonical_name": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
-      "aliases": [
-        "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "Knowledge Graph-Guided Retrieval Augmented Generation",
-      "aliases": [
-        "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
-        "Knowledge Graph-Guided Retrieval Augmented Generation",
-        "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
-        "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs"
-      ]
-    },
-    {
-      "entity_type": "Paper",
       "canonical_name": "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation",
       "aliases": [
         "ClusterRAG: Cluster-Based Collaborative Filtering for Personalized Retrieval-Augmented Generation"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
-      "aliases": [
-        "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
-      "aliases": [
-        "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
-      "aliases": [
-        "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
-      "aliases": [
-        "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
-      "aliases": [
-        "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
-      "aliases": [
-        "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
-      "aliases": [
-        "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
-      "aliases": [
-        "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation"
-      ]
-    },
-    {
-      "entity_type": "Paper",
-      "canonical_name": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
-      "aliases": [
-        "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph"
       ]
     },
     {
@@ -123,245 +29,115 @@
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Min Yang",
+      "entity_type": "Paper",
+      "canonical_name": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
       "aliases": [
-        "Min Yang"
+        "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Yi Liu",
+      "entity_type": "Paper",
+      "canonical_name": "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control",
       "aliases": [
-        "Yi Liu"
+        "5ting at SemEval-2026 Task 8: Strong End-to-End Multi-Turn RAG via LLM-Based Reranking and Faithfulness Control"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Rong-Ching Chang",
+      "entity_type": "Paper",
+      "canonical_name": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
       "aliases": [
-        "Rong-Ching Chang"
+        "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Potito Aghilar",
+      "entity_type": "Paper",
+      "canonical_name": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
       "aliases": [
-        "Potito Aghilar"
+        "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Atharva Negi",
+      "entity_type": "Paper",
+      "canonical_name": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
       "aliases": [
-        "Atharva Negi"
+        "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Gianni Carmosino",
+      "entity_type": "Paper",
+      "canonical_name": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
       "aliases": [
-        "Gianni Carmosino"
+        "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Linhao Luo",
+      "entity_type": "Paper",
+      "canonical_name": "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering",
       "aliases": [
-        "Linhao Luo"
+        "RAG-BioQA: A Retrieval-Augmented Generation Framework for Long-Form Biomedical Question Answering"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Chen Gong",
+      "entity_type": "Paper",
+      "canonical_name": "Knowledge Graph-Guided Retrieval Augmented Generation",
       "aliases": [
-        "Chen Gong"
+        "Knowledge Graph-Guided Retrieval Augmented Generation"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Sai Prasad Gudari",
+      "entity_type": "Paper",
+      "canonical_name": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
       "aliases": [
-        "Sai Prasad Gudari"
+        "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Ruochang Li",
+      "entity_type": "Paper",
+      "canonical_name": "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI",
       "aliases": [
-        "Ruochang Li"
+        "The EpisTwin: A Knowledge Graph-Grounded Neuro-Symbolic Architecture for Personal AI"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Ha-Thanh Nguyen",
+      "entity_type": "Paper",
+      "canonical_name": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
       "aliases": [
-        "Ha-Thanh Nguyen"
+        "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Tommaso Di Noia",
+      "entity_type": "Paper",
+      "canonical_name": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
       "aliases": [
-        "Tommaso Di Noia"
+        "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Wenbiao Tao",
+      "entity_type": "Paper",
+      "canonical_name": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
       "aliases": [
-        "Wenbiao Tao"
+        "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Zetian Hu",
+      "entity_type": "Paper",
+      "canonical_name": "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation",
       "aliases": [
-        "Zetian Hu"
+        "ORPHEAS: A Cross-Lingual Greek-English Embedding Model for Retrieval-Augmented Generation"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Quan Mai",
+      "entity_type": "Paper",
+      "canonical_name": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
       "aliases": [
-        "Quan Mai"
+        "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs"
       ]
     },
     {
-      "entity_type": "Author",
-      "canonical_name": "Weijian Xie",
+      "entity_type": "Paper",
+      "canonical_name": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
       "aliases": [
-        "Weijian Xie"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Ding Wang",
-      "aliases": [
-        "Ding Wang"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Hairong Zhang",
-      "aliases": [
-        "Hairong Zhang"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Xinyue Huang",
-      "aliases": [
-        "Xinyue Huang"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Peng Ren",
-      "aliases": [
-        "Peng Ren"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Jie Liu",
-      "aliases": [
-        "Jie Liu"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Christopher Buratti",
-      "aliases": [
-        "Christopher Buratti"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Hao Liu",
-      "aliases": [
-        "Hao Liu"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Mengzheng Yang",
-      "aliases": [
-        "Mengzheng Yang"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Davide Traini",
-      "aliases": [
-        "Davide Traini"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Yuexiang Xie",
-      "aliases": [
-        "Yuexiang Xie"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Yue Zhang",
-      "aliases": [
-        "Hongwei Zhang",
-        "Jiawei Zhang",
-        "Yaoze Zhang",
-        "Yue Zhang"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Nguyen Tran",
-      "aliases": [
-        "Le-Dung Nguyen",
-        "Nguyen Tran"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Guohang Yan",
-      "aliases": [
-        "Guohang Yan"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Hui Xiong",
-      "aliases": [
-        "Hui Xiong"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Federica Parlapiano",
-      "aliases": [
-        "Federica Parlapiano"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Pinlong Cai",
-      "aliases": [
-        "Pinlong Cai"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Shirui Pan",
-      "aliases": [
-        "Shirui Pan"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Yunbo Liu",
-      "aliases": [
-        "Yunbo Liu"
+        "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation"
       ]
     },
     {
@@ -373,65 +149,51 @@
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Luca Virgili",
+      "canonical_name": "Le-Dung Nguyen",
       "aliases": [
-        "Luca Virgili"
+        "Le-Dung Nguyen"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Thuong-Hieu Ngo",
+      "canonical_name": "Xiangrong Zhu",
       "aliases": [
-        "Thuong-Hieu Ngo"
+        "Xiangrong Zhu"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Gabriele Conte",
+      "canonical_name": "Gianluca Bonifazi",
       "aliases": [
-        "Gabriele Conte"
+        "Gianluca Bonifazi"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Khanh Truong",
+      "canonical_name": "Yuexiang Xie",
       "aliases": [
-        "Khanh Truong"
+        "Yuexiang Xie"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Anderson R. Avila",
+      "canonical_name": "Davide Traini",
       "aliases": [
-        "Anderson R. Avila"
+        "Davide Traini"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Kazuki Hayashi",
+      "canonical_name": "George Domalis",
       "aliases": [
-        "Kazuki Hayashi"
+        "George Domalis"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Yanfei Ren",
+      "canonical_name": "Guohang Yan",
       "aliases": [
-        "Yanfei Ren"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Zicheng Zhao",
-      "aliases": [
-        "Zicheng Zhao"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Huu-Dong Nguyen",
-      "aliases": [
-        "Huu-Dong Nguyen"
+        "Guohang Yan"
       ]
     },
     {
@@ -450,345 +212,9 @@
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Giulia Quaglieri",
+      "canonical_name": "Xuefeng Liang",
       "aliases": [
-        "Giulia Quaglieri"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Kaihua Ni",
-      "aliases": [
-        "Kaihua Ni"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Lovely Yeswanth Panchumarthi",
-      "aliases": [
-        "Lovely Yeswanth Panchumarthi"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Xinyu Cai",
-      "aliases": [
-        "Xinyu Cai"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Lu Dai",
-      "aliases": [
-        "Lu Dai"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Vito Walter Anelli",
-      "aliases": [
-        "Vito Walter Anelli"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Hidetaka Kamigaito",
-      "aliases": [
-        "Hidetaka Kamigaito"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Mingjie Xie",
-      "aliases": [
-        "Mingjie Xie"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "David Osei Opoku",
-      "aliases": [
-        "David Osei Opoku"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Francesco Maria Donini",
-      "aliases": [
-        "Francesco Maria Donini"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Gholamreza Haffari",
-      "aliases": [
-        "Gholamreza Haffari"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Xuan-Bach Le",
-      "aliases": [
-        "Xuan-Bach Le"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Quang-Thanh Tran",
-      "aliases": [
-        "Quang-Thanh Tran"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Uttamasha Anjally Oyshi",
-      "aliases": [
-        "Uttamasha Anjally Oyshi"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Song Mao",
-      "aliases": [
-        "Song Mao"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Yuhui Liu",
-      "aliases": [
-        "Yuhui Liu"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Chi Hoang",
-      "aliases": [
-        "Chi Hoang"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Fang Sun",
-      "aliases": [
-        "Fang Sun"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Chunxiao Xing",
-      "aliases": [
-        "Chunxiao Xing"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Kejian Tong",
-      "aliases": [
-        "Kejian Tong"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Yunshi Lan",
-      "aliases": [
-        "Yunshi Lan"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Alan Davoust",
-      "aliases": [
-        "Alan Davoust"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Alexandra Apostolopoulou",
-      "aliases": [
-        "Alexandra Apostolopoulou"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Wei Hu",
-      "aliases": [
-        "Wei Hu"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Ioannis E. Livieris",
-      "aliases": [
-        "Ioannis E. Livieris"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Praveen Raj Budime",
-      "aliases": [
-        "Praveen Raj Budime"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Gengshen Wu",
-      "aliases": [
-        "Gengshen Wu"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Thi-Hai-Yen Vuong",
-      "aliases": [
-        "Thi-Hai-Yen Vuong"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Chinh Trong Nguyen",
-      "aliases": [
-        "Chinh Trong Nguyen"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "George Domalis",
-      "aliases": [
-        "George Domalis"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Yuanhao Huang",
-      "aliases": [
-        "Yuanhao Huang"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Athanasios Koursaris",
-      "aliases": [
-        "Athanasios Koursaris"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Wenchao Zhang",
-      "aliases": [
-        "Wenchao Zhang"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Yunhan Li",
-      "aliases": [
-        "Yunhan Li"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Botian Shi",
-      "aliases": [
-        "Botian Shi"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Giovanni Servedio",
-      "aliases": [
-        "Giovanni Servedio"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Alessio Mattiace",
-      "aliases": [
-        "Alessio Mattiace"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Hazem Amamou",
-      "aliases": [
-        "Hazem Amamou"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Tri Le",
-      "aliases": [
-        "Tri Le"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Sumalatha Saleti",
-      "aliases": [
-        "Sumalatha Saleti"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Dinh Phung",
-      "aliases": [
-        "Dinh Phung"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Hoang-Trung Nguyen",
-      "aliases": [
-        "Hoang-Trung Nguyen"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Thien-Qua-T-Nguyen",
-      "aliases": [
-        "Thien-Qua-T-Nguyen"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Harsit Upadhya",
-      "aliases": [
-        "Harsit Upadhya"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Xinyuan Li",
-      "aliases": [
-        "Xinyuan Li"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Francesco Musicco",
-      "aliases": [
-        "Francesco Musicco"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Michele Marchetti",
-      "aliases": [
-        "Michele Marchetti"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Gibson Nkhata",
-      "aliases": [
-        "Gibson Nkhata"
-      ]
-    },
-    {
-      "entity_type": "Author",
-      "canonical_name": "Weining Qian",
-      "aliases": [
-        "Weining Qian"
+        "Xuefeng Liang"
       ]
     },
     {
@@ -800,6 +226,34 @@
     },
     {
       "entity_type": "Author",
+      "canonical_name": "Giulia Quaglieri",
+      "aliases": [
+        "Giulia Quaglieri"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Jiawei Zhang",
+      "aliases": [
+        "Jiawei Zhang"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Chi Hoang",
+      "aliases": [
+        "Chi Hoang"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Kejian Tong",
+      "aliases": [
+        "Kejian Tong"
+      ]
+    },
+    {
+      "entity_type": "Author",
       "canonical_name": "St\u00e9phane Gagnon",
       "aliases": [
         "St\u00e9phane Gagnon"
@@ -807,44 +261,72 @@
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Shinya Kouda",
+      "canonical_name": "Alessio Mattiace",
       "aliases": [
-        "Shinya Kouda"
+        "Alessio Mattiace"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Hong Cheng",
+      "canonical_name": "Yunbo Liu",
       "aliases": [
-        "Hong Cheng"
+        "Yunbo Liu"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Zihan Gong",
+      "canonical_name": "Peng Ren",
       "aliases": [
-        "Zihan Gong"
+        "Peng Ren"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Taro Watanabe",
+      "canonical_name": "Wenbiao Tao",
       "aliases": [
-        "Taro Watanabe"
+        "Wenbiao Tao"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Gianluca Bonifazi",
+      "canonical_name": "Wei Hu",
       "aliases": [
-        "Gianluca Bonifazi"
+        "Wei Hu"
       ]
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Xiangrong Zhu",
+      "canonical_name": "Francesco Maria Donini",
       "aliases": [
-        "Xiangrong Zhu"
+        "Francesco Maria Donini"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Vito Walter Anelli",
+      "aliases": [
+        "Vito Walter Anelli"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Yanfei Ren",
+      "aliases": [
+        "Yanfei Ren"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Rong-Ching Chang",
+      "aliases": [
+        "Rong-Ching Chang"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Botian Shi",
+      "aliases": [
+        "Botian Shi"
       ]
     },
     {
@@ -856,9 +338,345 @@
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Yaliang Li",
+      "canonical_name": "Gabriele Conte",
       "aliases": [
-        "Yaliang Li"
+        "Gabriele Conte"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Thuong-Hieu Ngo",
+      "aliases": [
+        "Thuong-Hieu Ngo"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Thi-Hai-Yen Vuong",
+      "aliases": [
+        "Thi-Hai-Yen Vuong"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Hui Xiong",
+      "aliases": [
+        "Hui Xiong"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Zicheng Zhao",
+      "aliases": [
+        "Zicheng Zhao"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Mingjie Xie",
+      "aliases": [
+        "Mingjie Xie"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Gibson Nkhata",
+      "aliases": [
+        "Gibson Nkhata"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Ding Wang",
+      "aliases": [
+        "Ding Wang"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Dinh Phung",
+      "aliases": [
+        "Dinh Phung"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Yaoze Zhang",
+      "aliases": [
+        "Yaoze Zhang"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Chinh Trong Nguyen",
+      "aliases": [
+        "Chinh Trong Nguyen"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Athanasios Koursaris",
+      "aliases": [
+        "Athanasios Koursaris"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Francesco Musicco",
+      "aliases": [
+        "Francesco Musicco"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Sumalatha Saleti",
+      "aliases": [
+        "Sumalatha Saleti"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Kazuki Hayashi",
+      "aliases": [
+        "Kazuki Hayashi"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Yuhui Liu",
+      "aliases": [
+        "Yuhui Liu"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Hong Cheng",
+      "aliases": [
+        "Hong Cheng"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Song Mao",
+      "aliases": [
+        "Song Mao"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Hazem Amamou",
+      "aliases": [
+        "Hazem Amamou"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Hongwei Zhang",
+      "aliases": [
+        "Hongwei Zhang"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Tommaso Di Noia",
+      "aliases": [
+        "Tommaso Di Noia"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Sai Prasad Gudari",
+      "aliases": [
+        "Sai Prasad Gudari"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Uttamasha Anjally Oyshi",
+      "aliases": [
+        "Uttamasha Anjally Oyshi"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Alexandra Apostolopoulou",
+      "aliases": [
+        "Alexandra Apostolopoulou"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Khanh Truong",
+      "aliases": [
+        "Khanh Truong"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Taro Watanabe",
+      "aliases": [
+        "Taro Watanabe"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Thien-Qua-T-Nguyen",
+      "aliases": [
+        "Thien-Qua-T-Nguyen"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Nguyen Tran",
+      "aliases": [
+        "Nguyen Tran"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Federica Parlapiano",
+      "aliases": [
+        "Federica Parlapiano"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Shinya Kouda",
+      "aliases": [
+        "Shinya Kouda"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Praveen Raj Budime",
+      "aliases": [
+        "Praveen Raj Budime"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "David Osei Opoku",
+      "aliases": [
+        "David Osei Opoku"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Zetian Hu",
+      "aliases": [
+        "Zetian Hu"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Hoang-Trung Nguyen",
+      "aliases": [
+        "Hoang-Trung Nguyen"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Quang-Thanh Tran",
+      "aliases": [
+        "Quang-Thanh Tran"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Hao Liu",
+      "aliases": [
+        "Hao Liu"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Jie Liu",
+      "aliases": [
+        "Jie Liu"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Kaihua Ni",
+      "aliases": [
+        "Kaihua Ni"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Chunxiao Xing",
+      "aliases": [
+        "Chunxiao Xing"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Xuan-Bach Le",
+      "aliases": [
+        "Xuan-Bach Le"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Michele Marchetti",
+      "aliases": [
+        "Michele Marchetti"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Potito Aghilar",
+      "aliases": [
+        "Potito Aghilar"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Shirui Pan",
+      "aliases": [
+        "Shirui Pan"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Lu Dai",
+      "aliases": [
+        "Lu Dai"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Tri Le",
+      "aliases": [
+        "Tri Le"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Pinlong Cai",
+      "aliases": [
+        "Pinlong Cai"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Gengshen Wu",
+      "aliases": [
+        "Gengshen Wu"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Ruochang Li",
+      "aliases": [
+        "Ruochang Li"
+      ]
+    },
+    {
+      "entity_type": "Author",
+      "canonical_name": "Yuanhao Huang",
+      "aliases": [
+        "Yuanhao Huang"
       ]
     },
     {
@@ -870,244 +688,233 @@
     },
     {
       "entity_type": "Author",
-      "canonical_name": "Xuefeng Liang",
+      "canonical_name": "Huu-Dong Nguyen",
       "aliases": [
-        "Xuefeng Liang"
+        "Huu-Dong Nguyen"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "KG$^2$RAG",
+      "entity_type": "Author",
+      "canonical_name": "Hidetaka Kamigaito",
       "aliases": [
-        "KG$^2$RAG"
+        "Hidetaka Kamigaito"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "GraphRAG",
+      "entity_type": "Author",
+      "canonical_name": "Linhao Luo",
       "aliases": [
-        "GraphRAG"
+        "Linhao Luo"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "ColBERT",
+      "entity_type": "Author",
+      "canonical_name": "Quan Mai",
       "aliases": [
-        "ColBERT"
+        "Quan Mai"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "Multimodal Language Models",
+      "entity_type": "Author",
+      "canonical_name": "Xinyue Huang",
       "aliases": [
-        "Multimodal Language Models"
+        "Xinyue Huang"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "Large Language Models",
+      "entity_type": "Author",
+      "canonical_name": "Zihan Gong",
       "aliases": [
-        "Large Language Models"
+        "Zihan Gong"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "HetaRAG",
+      "entity_type": "Author",
+      "canonical_name": "Mengzheng Yang",
       "aliases": [
-        "HetaRAG"
+        "Mengzheng Yang"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "LLM Reranker",
+      "entity_type": "Author",
+      "canonical_name": "Min Yang",
       "aliases": [
-        "LLM Reranker"
+        "Min Yang"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "Retrieval Augmented Generation",
+      "entity_type": "Author",
+      "canonical_name": "Luca Virgili",
       "aliases": [
-        "Retrieval Augmented Generation",
-        "Retrieval-Augmented Generation",
-        "Retrieval-Augmented Generation (RAG)",
-        "Retrieval-augmented generation",
-        "Retrieval-augmented generation (RAG)"
+        "Luca Virgili"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "LLM",
+      "entity_type": "Author",
+      "canonical_name": "Atharva Negi",
       "aliases": [
-        "LLM"
+        "Atharva Negi"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "DSRAG",
+      "entity_type": "Author",
+      "canonical_name": "Yunhan Li",
       "aliases": [
-        "DSRAG"
+        "Yunhan Li"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "LoRA",
+      "entity_type": "Author",
+      "canonical_name": "Harsit Upadhya",
       "aliases": [
-        "LoRA"
+        "Harsit Upadhya"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "T5",
+      "entity_type": "Author",
+      "canonical_name": "Alan Davoust",
       "aliases": [
-        "T5"
+        "Alan Davoust"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "MySQL",
+      "entity_type": "Author",
+      "canonical_name": "Weijian Xie",
       "aliases": [
-        "MySQL"
+        "Weijian Xie"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "structured subgraph retrieval",
+      "entity_type": "Author",
+      "canonical_name": "Gholamreza Haffari",
       "aliases": [
-        "structured subgraph retrieval"
+        "Gholamreza Haffari"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "Multi-Agent Query Understanding System",
+      "entity_type": "Author",
+      "canonical_name": "Giovanni Servedio",
       "aliases": [
-        "Multi-Agent Query Understanding System"
+        "Giovanni Servedio"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "CRF",
+      "entity_type": "Author",
+      "canonical_name": "Yunshi Lan",
       "aliases": [
-        "CRF"
+        "Yunshi Lan"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "knowledge graphs",
+      "entity_type": "Author",
+      "canonical_name": "Gianni Carmosino",
       "aliases": [
-        "knowledge graphs"
+        "Gianni Carmosino"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "layerwise summarization",
+      "entity_type": "Author",
+      "canonical_name": "Chen Gong",
       "aliases": [
-        "layerwise summarization"
+        "Chen Gong"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "WeKnow-RAG",
+      "entity_type": "Author",
+      "canonical_name": "Fang Sun",
       "aliases": [
-        "WeKnow-RAG"
+        "Fang Sun"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "GFM-RAG",
+      "entity_type": "Author",
+      "canonical_name": "Weining Qian",
       "aliases": [
-        "GFM-RAG"
+        "Weining Qian"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "CommunityKG-RAG",
+      "entity_type": "Author",
+      "canonical_name": "Anderson R. Avila",
       "aliases": [
-        "CommunityKG-RAG"
+        "Anderson R. Avila"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "semantic pruning",
+      "entity_type": "Author",
+      "canonical_name": "Ha-Thanh Nguyen",
       "aliases": [
-        "semantic pruning"
+        "Ha-Thanh Nguyen"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "MonoT5",
+      "entity_type": "Author",
+      "canonical_name": "Lovely Yeswanth Panchumarthi",
       "aliases": [
-        "MonoT5"
+        "Lovely Yeswanth Panchumarthi"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "FLAN-T5",
+      "entity_type": "Author",
+      "canonical_name": "Hairong Zhang",
       "aliases": [
-        "FLAN-T5"
+        "Hairong Zhang"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "Graph Retrieval-Augmented Generation",
+      "entity_type": "Author",
+      "canonical_name": "Wenchao Zhang",
       "aliases": [
-        "Graph Retrieval-Augmented Generation"
+        "Wenchao Zhang"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "Online Deep Visual Refinement",
+      "entity_type": "Author",
+      "canonical_name": "Yaliang Li",
       "aliases": [
-        "Online Deep Visual Refinement"
+        "Yaliang Li"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "IterKey",
+      "entity_type": "Author",
+      "canonical_name": "Ioannis E. Livieris",
       "aliases": [
-        "IterKey"
+        "Ioannis E. Livieris"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "FAISS",
+      "entity_type": "Author",
+      "canonical_name": "Xinyu Cai",
       "aliases": [
-        "FAISS"
+        "Xinyu Cai"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "BM25",
+      "entity_type": "Author",
+      "canonical_name": "Christopher Buratti",
       "aliases": [
-        "BM25"
+        "Christopher Buratti"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "Generalized Reinforcement Policy Optimization",
+      "entity_type": "Author",
+      "canonical_name": "Yi Liu",
       "aliases": [
-        "Generalized Reinforcement Policy Optimization"
+        "Yi Liu"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "BioBERT",
+      "entity_type": "Author",
+      "canonical_name": "Xinyuan Li",
       "aliases": [
-        "BioBERT"
+        "Xinyuan Li"
       ]
     },
     {
-      "entity_type": "Method",
-      "canonical_name": "LLaMA 3",
+      "entity_type": "Author",
+      "canonical_name": "Yue Zhang",
       "aliases": [
-        "LLaMA 3"
-      ]
-    },
-    {
-      "entity_type": "Method",
-      "canonical_name": "ORPHEAS",
-      "aliases": [
-        "ORPHEAS"
+        "Yue Zhang"
       ]
     },
     {
@@ -1119,16 +926,16 @@
     },
     {
       "entity_type": "Method",
-      "canonical_name": "TagRAG",
+      "canonical_name": "Large Language Models",
       "aliases": [
-        "TagRAG"
+        "Large Language Models"
       ]
     },
     {
       "entity_type": "Method",
-      "canonical_name": "vector database",
+      "canonical_name": "Graph Retrieval-Augmented Generation",
       "aliases": [
-        "vector database"
+        "Graph Retrieval-Augmented Generation"
       ]
     },
     {
@@ -1140,6 +947,59 @@
     },
     {
       "entity_type": "Method",
+      "canonical_name": "LLaMA 3",
+      "aliases": [
+        "LLaMA 3"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "Retrieval-Augmented Generation",
+      "aliases": [
+        "Retrieval Augmented Generation",
+        "Retrieval-Augmented Generation",
+        "Retrieval-Augmented Generation (RAG)",
+        "Retrieval-augmented generation",
+        "Retrieval-augmented generation (RAG)"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "HetaRAG",
+      "aliases": [
+        "HetaRAG"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "layerwise summarization",
+      "aliases": [
+        "layerwise summarization"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "GFM-RAG",
+      "aliases": [
+        "GFM-RAG"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "ORPHEAS",
+      "aliases": [
+        "ORPHEAS"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "FAISS",
+      "aliases": [
+        "FAISS"
+      ]
+    },
+    {
+      "entity_type": "Method",
       "canonical_name": "relational engines",
       "aliases": [
         "relational engines"
@@ -1147,16 +1007,65 @@
     },
     {
       "entity_type": "Method",
-      "canonical_name": "TIGRAG",
+      "canonical_name": "semantic pruning",
       "aliases": [
-        "TIGRAG"
+        "semantic pruning"
       ]
     },
     {
       "entity_type": "Method",
-      "canonical_name": "entailment tuning",
+      "canonical_name": "Generalized Reinforcement Policy Optimization",
       "aliases": [
-        "entailment tuning"
+        "Generalized Reinforcement Policy Optimization"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "vector database",
+      "aliases": [
+        "vector database"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "GraphRAG",
+      "aliases": [
+        "GraphRAG"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "Multi-Agent Query Understanding System",
+      "aliases": [
+        "Multi-Agent Query Understanding System"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "LoRA",
+      "aliases": [
+        "LoRA"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "TagRAG",
+      "aliases": [
+        "TagRAG"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "MySQL",
+      "aliases": [
+        "MySQL"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "LLM Reranker",
+      "aliases": [
+        "LLM Reranker"
       ]
     },
     {
@@ -1181,18 +1090,136 @@
       ]
     },
     {
-      "entity_type": "Task",
-      "canonical_name": "question answering",
+      "entity_type": "Method",
+      "canonical_name": "CommunityKG-RAG",
       "aliases": [
-        "Question Answering",
-        "question answering"
+        "CommunityKG-RAG"
       ]
     },
     {
-      "entity_type": "Task",
-      "canonical_name": "factual information",
+      "entity_type": "Method",
+      "canonical_name": "Online Deep Visual Refinement",
       "aliases": [
-        "factual information"
+        "Online Deep Visual Refinement"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "MonoT5",
+      "aliases": [
+        "MonoT5"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "TIGRAG",
+      "aliases": [
+        "TIGRAG"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "Multimodal Language Models",
+      "aliases": [
+        "Multimodal Language Models"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "KG$^2$RAG",
+      "aliases": [
+        "KG$^2$RAG"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "BM25",
+      "aliases": [
+        "BM25"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "FLAN-T5",
+      "aliases": [
+        "FLAN-T5"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "T5",
+      "aliases": [
+        "T5"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "knowledge graphs",
+      "aliases": [
+        "knowledge graphs"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "BioBERT",
+      "aliases": [
+        "BioBERT"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "IterKey",
+      "aliases": [
+        "IterKey"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "structured subgraph retrieval",
+      "aliases": [
+        "structured subgraph retrieval"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "DSRAG",
+      "aliases": [
+        "DSRAG"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "ColBERT",
+      "aliases": [
+        "ColBERT"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "entailment tuning",
+      "aliases": [
+        "entailment tuning"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "LLM",
+      "aliases": [
+        "LLM"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "CRF",
+      "aliases": [
+        "CRF"
+      ]
+    },
+    {
+      "entity_type": "Method",
+      "canonical_name": "WeKnow-RAG",
+      "aliases": [
+        "WeKnow-RAG"
       ]
     },
     {
@@ -1205,17 +1232,10 @@
     },
     {
       "entity_type": "Task",
-      "canonical_name": "Legal Case Entailment",
+      "canonical_name": "Question Answering",
       "aliases": [
-        "Legal Case Entailment",
-        "Legal Textual Entailment"
-      ]
-    },
-    {
-      "entity_type": "Task",
-      "canonical_name": "Task C",
-      "aliases": [
-        "Task C"
+        "Question Answering",
+        "question answering"
       ]
     },
     {
@@ -1228,30 +1248,9 @@
     },
     {
       "entity_type": "Task",
-      "canonical_name": "Legal Case Retrieval",
+      "canonical_name": "complex reasoning tasks",
       "aliases": [
-        "Legal Case Retrieval"
-      ]
-    },
-    {
-      "entity_type": "Task",
-      "canonical_name": "Personal AI",
-      "aliases": [
-        "Personal AI"
-      ]
-    },
-    {
-      "entity_type": "Task",
-      "canonical_name": "open-domain question answering",
-      "aliases": [
-        "open-domain question answering"
-      ]
-    },
-    {
-      "entity_type": "Task",
-      "canonical_name": "biomedical question answering",
-      "aliases": [
-        "biomedical question answering"
+        "complex reasoning tasks"
       ]
     },
     {
@@ -1263,23 +1262,17 @@
     },
     {
       "entity_type": "Task",
-      "canonical_name": "Task A",
+      "canonical_name": "Legal Case Entailment",
       "aliases": [
-        "Task A"
+        "Legal Case Entailment",
+        "Legal Textual Entailment"
       ]
     },
     {
       "entity_type": "Task",
-      "canonical_name": "complex reasoning tasks",
+      "canonical_name": "Legal Case Retrieval",
       "aliases": [
-        "complex reasoning tasks"
-      ]
-    },
-    {
-      "entity_type": "Task",
-      "canonical_name": "fact-checking",
-      "aliases": [
-        "fact-checking"
+        "Legal Case Retrieval"
       ]
     },
     {
@@ -1291,23 +1284,58 @@
     },
     {
       "entity_type": "Task",
+      "canonical_name": "Task C",
+      "aliases": [
+        "Task C"
+      ]
+    },
+    {
+      "entity_type": "Task",
+      "canonical_name": "factual information",
+      "aliases": [
+        "factual information"
+      ]
+    },
+    {
+      "entity_type": "Task",
       "canonical_name": "NLI tasks",
       "aliases": [
         "NLI tasks"
       ]
     },
     {
-      "entity_type": "Dataset",
-      "canonical_name": "MedQuAD",
+      "entity_type": "Task",
+      "canonical_name": "biomedical question answering",
       "aliases": [
-        "MedQuAD"
+        "biomedical question answering"
       ]
     },
     {
-      "entity_type": "Dataset",
-      "canonical_name": "PubMedQA",
+      "entity_type": "Task",
+      "canonical_name": "open-domain question answering",
       "aliases": [
-        "PubMedQA"
+        "open-domain question answering"
+      ]
+    },
+    {
+      "entity_type": "Task",
+      "canonical_name": "fact-checking",
+      "aliases": [
+        "fact-checking"
+      ]
+    },
+    {
+      "entity_type": "Task",
+      "canonical_name": "Personal AI",
+      "aliases": [
+        "Personal AI"
+      ]
+    },
+    {
+      "entity_type": "Task",
+      "canonical_name": "Task A",
+      "aliases": [
+        "Task A"
       ]
     },
     {
@@ -1319,23 +1347,9 @@
     },
     {
       "entity_type": "Dataset",
-      "canonical_name": "PersonalQA-71-100",
+      "canonical_name": "PubMedQA",
       "aliases": [
-        "PersonalQA-71-100"
-      ]
-    },
-    {
-      "entity_type": "Dataset",
-      "canonical_name": "SemEval2026",
-      "aliases": [
-        "SemEval2026"
-      ]
-    },
-    {
-      "entity_type": "Dataset",
-      "canonical_name": "UltraDomain",
-      "aliases": [
-        "UltraDomain"
+        "PubMedQA"
       ]
     },
     {
@@ -1347,13 +1361,6 @@
     },
     {
       "entity_type": "Dataset",
-      "canonical_name": "COLIEE 2026",
-      "aliases": [
-        "COLIEE 2026"
-      ]
-    },
-    {
-      "entity_type": "Dataset",
       "canonical_name": "LaMP",
       "aliases": [
         "LaMP"
@@ -1361,9 +1368,9 @@
     },
     {
       "entity_type": "Dataset",
-      "canonical_name": "Retrieval-Augmented Generation Benchmark",
+      "canonical_name": "UltraDomain",
       "aliases": [
-        "Retrieval-Augmented Generation Benchmark"
+        "UltraDomain"
       ]
     },
     {
@@ -1371,6 +1378,27 @@
       "canonical_name": "STARD",
       "aliases": [
         "STARD"
+      ]
+    },
+    {
+      "entity_type": "Dataset",
+      "canonical_name": "COLIEE 2026",
+      "aliases": [
+        "COLIEE 2026"
+      ]
+    },
+    {
+      "entity_type": "Dataset",
+      "canonical_name": "PersonalQA-71-100",
+      "aliases": [
+        "PersonalQA-71-100"
+      ]
+    },
+    {
+      "entity_type": "Dataset",
+      "canonical_name": "MedQuAD",
+      "aliases": [
+        "MedQuAD"
       ]
     },
     {
@@ -1385,6 +1413,20 @@
       "canonical_name": "private, domain-specific corpora",
       "aliases": [
         "private, domain-specific corpora"
+      ]
+    },
+    {
+      "entity_type": "Dataset",
+      "canonical_name": "Retrieval-Augmented Generation Benchmark",
+      "aliases": [
+        "Retrieval-Augmented Generation Benchmark"
+      ]
+    },
+    {
+      "entity_type": "Dataset",
+      "canonical_name": "SemEval2026",
+      "aliases": [
+        "SemEval2026"
       ]
     }
   ],
@@ -1449,7 +1491,7 @@
       "source_entity": "DSRAG",
       "source_type": "Method",
       "relation_type": "EXTENDS",
-      "target_entity": "Retrieval Augmented Generation",
+      "target_entity": "Retrieval-Augmented Generation",
       "target_type": "Method",
       "confidence": 1.0
     },
@@ -1473,12 +1515,12 @@
       "source_entity": "DSRAG: A Domain-Specific Retrieval Framework Based on Document-derived Multimodal Knowledge Graph",
       "source_type": "Paper",
       "relation_type": "ADDRESSES",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Weijian Xie",
@@ -1486,7 +1528,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Xuefeng Liang",
@@ -1494,7 +1536,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Yuhui Liu",
@@ -1502,7 +1544,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Kaihua Ni",
@@ -1510,7 +1552,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Hong Cheng",
@@ -1518,7 +1560,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Zetian Hu",
@@ -1526,7 +1568,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs",
       "source_type": "Paper",
       "relation_type": "PROPOSES",
       "target_entity": "WeKnow-RAG",
@@ -1537,7 +1579,7 @@
       "source_entity": "WeKnow-RAG",
       "source_type": "Method",
       "relation_type": "EXTENDS",
-      "target_entity": "Retrieval Augmented Generation",
+      "target_entity": "Retrieval-Augmented Generation",
       "target_type": "Method",
       "confidence": 1.0
     },
@@ -1545,7 +1587,7 @@
       "source_entity": "WeKnow-RAG",
       "source_type": "Method",
       "relation_type": "ADDRESSES",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 0.6
     },
@@ -1577,7 +1619,7 @@
       "source_entity": "CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
-      "target_entity": "Yue Zhang",
+      "target_entity": "Jiawei Zhang",
       "target_type": "Author",
       "confidence": 1.0
     },
@@ -1689,7 +1731,7 @@
       "source_entity": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
       "source_type": "Paper",
       "relation_type": "ADDRESSES",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 0.8
     },
@@ -1977,7 +2019,7 @@
       "source_entity": "LegalMALR:Multi-Agent Query Understanding and LLM-Based Reranking for Chinese Statute Retrieval",
       "source_type": "Paper",
       "relation_type": "EXTENDS",
-      "target_entity": "Retrieval Augmented Generation",
+      "target_entity": "Retrieval-Augmented Generation",
       "target_type": "Method",
       "confidence": 0.6
     },
@@ -2049,7 +2091,7 @@
       "source_entity": "KG$^2$RAG",
       "source_type": "Method",
       "relation_type": "ADDRESSES",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 0.6
     },
@@ -2121,7 +2163,7 @@
       "source_entity": "Enhancing Document-Level Question Answering via Multi-Hop Retrieval-Augmented Generation with LLaMA 3",
       "source_type": "Paper",
       "relation_type": "ADDRESSES",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 1.0
     },
@@ -2321,7 +2363,7 @@
       "source_entity": "TagRAG",
       "source_type": "Method",
       "relation_type": "EXTENDS",
-      "target_entity": "Retrieval Augmented Generation",
+      "target_entity": "Retrieval-Augmented Generation",
       "target_type": "Method",
       "confidence": 0.6
     },
@@ -2369,7 +2411,7 @@
       "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
-      "target_entity": "Yue Zhang",
+      "target_entity": "Hongwei Zhang",
       "target_type": "Author",
       "confidence": 1.0
     },
@@ -2377,7 +2419,7 @@
       "source_entity": "HetaRAG: Hybrid Deep Retrieval-Augmented Generation across Heterogeneous Data Stores",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
-      "target_entity": "Yue Zhang",
+      "target_entity": "Yaoze Zhang",
       "target_type": "Author",
       "confidence": 1.0
     },
@@ -2417,7 +2459,7 @@
       "source_entity": "HetaRAG",
       "source_type": "Method",
       "relation_type": "EXTENDS",
-      "target_entity": "Retrieval Augmented Generation",
+      "target_entity": "Retrieval-Augmented Generation",
       "target_type": "Method",
       "confidence": 0.6
     },
@@ -2585,7 +2627,7 @@
       "source_entity": "NOWJ@COLIEE 2026: Adaptive Pipelines for Legal Retrieval and Reasoning",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
-      "target_entity": "Nguyen Tran",
+      "target_entity": "Le-Dung Nguyen",
       "target_type": "Author",
       "confidence": 1.0
     },
@@ -2913,7 +2955,7 @@
       "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
       "source_type": "Paper",
       "relation_type": "EXTENDS",
-      "target_entity": "Retrieval Augmented Generation",
+      "target_entity": "Retrieval-Augmented Generation",
       "target_type": "Method",
       "confidence": 0.8
     },
@@ -2921,7 +2963,7 @@
       "source_entity": "Biomedical Question Answering via Multi-Level Summarization on a Local Knowledge Graph",
       "source_type": "Paper",
       "relation_type": "ADDRESSES",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 1.0
     },
@@ -2934,7 +2976,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Hazem Amamou",
@@ -2942,7 +2984,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "St\u00e9phane Gagnon",
@@ -2950,7 +2992,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Alan Davoust",
@@ -2958,7 +3000,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Anderson R. Avila",
@@ -2966,15 +3008,15 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
       "source_type": "Paper",
       "relation_type": "USES_METHOD",
-      "target_entity": "Retrieval Augmented Generation",
+      "target_entity": "Retrieval-Augmented Generation",
       "target_type": "Method",
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
       "source_type": "Paper",
       "relation_type": "EVALUATED_ON",
       "target_entity": "Retrieval-Augmented Generation Benchmark",
@@ -2982,7 +3024,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
       "source_type": "Paper",
       "relation_type": "USES_METHOD",
       "target_entity": "GraphRAG",
@@ -3041,7 +3083,7 @@
       "source_entity": "IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation",
       "source_type": "Paper",
       "relation_type": "ADDRESSES",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 0.8
     },
@@ -3049,12 +3091,12 @@
       "source_entity": "IterKey",
       "source_type": "Method",
       "relation_type": "APPLIED_TO",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 0.8
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Linhao Luo",
@@ -3062,7 +3104,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Zicheng Zhao",
@@ -3070,7 +3112,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Gholamreza Haffari",
@@ -3078,7 +3120,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Dinh Phung",
@@ -3086,7 +3128,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Chen Gong",
@@ -3094,7 +3136,7 @@
       "confidence": 1.0
     },
     {
-      "source_entity": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "source_entity": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
       "source_type": "Paper",
       "relation_type": "AUTHORED_BY",
       "target_entity": "Shirui Pan",
@@ -3121,7 +3163,7 @@
       "source_entity": "GFM-RAG",
       "source_type": "Method",
       "relation_type": "ADDRESSES",
-      "target_entity": "question answering",
+      "target_entity": "Question Answering",
       "target_type": "Task",
       "confidence": 0.6
     }

@@ -1,16 +1,3 @@
-"""
-Entity resolution: merges duplicate entities that were extracted with
-different surface names but refer to the same real-world thing
-(e.g. "RAG" and "retrieval-augmented generation").
-
-Approach: exact-match normalization first (cheap), then embedding
-similarity for whatever's left (catches semantic duplicates that don't
-match as strings). Never merges across different entity_types.
-
-Output: data/resolved.json — canonical entities with alias lists, and
-relations rewritten to point at canonical names.
-"""
-
 import json
 import re
 from collections import defaultdict
@@ -20,13 +7,12 @@ import numpy as np
 EXTRACTED_PATH = "data/extracted.json"
 OUTPUT_PATH = "data/resolved.json"
 SIMILARITY_THRESHOLD = 0.82
+FUZZY_MATCH_TYPES = {"Method", "Task", "Dataset"}
 
-# Small local model: ~90MB, runs on CPU, no API calls, no cost.
 _model = SentenceTransformer("all-MiniLM-L6-v2")
 
 
 def normalize(name: str) -> str:
-    """Lowercase, strip punctuation/whitespace noise for the exact-match pass."""
     name = name.lower().strip()
     name = re.sub(r"\s+", " ", name)
     name = re.sub(r"[^\w\s\-]", "", name)
@@ -34,15 +20,12 @@ def normalize(name: str) -> str:
 
 
 class UnionFind:
-    """Standard union-find (disjoint set) so we can cluster entities that
-    are transitively similar (A~B and B~C means A, B, C are one cluster)."""
-
     def __init__(self, items):
         self.parent = {item: item for item in items}
 
     def find(self, x):
         while self.parent[x] != x:
-            self.parent[x] = self.parent[self.parent[x]]  # path compression
+            self.parent[x] = self.parent[self.parent[x]]
             x = self.parent[x]
         return x
 
@@ -52,18 +35,13 @@ class UnionFind:
             self.parent[ra] = rb
 
 
-def resolve_entities_for_type(names: list[str]) -> dict[str, str]:
-    """
-    Given all raw entity names of one type across the whole corpus, return a
-    mapping: raw_name -> canonical_name.
-    """
+def resolve_entities_for_type(names: list[str], entity_type: str) -> dict[str, str]:
     unique_names = list(set(names))
     if len(unique_names) <= 1:
         return {n: unique_names[0] if unique_names else n for n in names}
 
     uf = UnionFind(unique_names)
 
-    # Pass 1: exact match after normalization
     by_normalized = defaultdict(list)
     for n in unique_names:
         by_normalized[normalize(n)].append(n)
@@ -71,17 +49,15 @@ def resolve_entities_for_type(names: list[str]) -> dict[str, str]:
         for n in group[1:]:
             uf.union(n, group[0])
 
-    # Pass 2: embedding similarity for everything not already merged
-    embeddings = _model.encode(unique_names, normalize_embeddings=True)
-    sim_matrix = embeddings @ embeddings.T  # cosine similarity since normalized
+    if entity_type in FUZZY_MATCH_TYPES:
+        embeddings = _model.encode(unique_names, normalize_embeddings=True)
+        sim_matrix = embeddings @ embeddings.T
 
-    for i in range(len(unique_names)):
-        for j in range(i + 1, len(unique_names)):
-            if sim_matrix[i][j] >= SIMILARITY_THRESHOLD:
-                uf.union(unique_names[i], unique_names[j])
+        for i in range(len(unique_names)):
+            for j in range(i + 1, len(unique_names)):
+                if sim_matrix[i][j] >= SIMILARITY_THRESHOLD:
+                    uf.union(unique_names[i], unique_names[j])
 
-    # Pick canonical name per cluster: shortest surface form (usually the
-    # cleanest — "RAG" over "retrieval-augmented generation systems")
     clusters = defaultdict(list)
     for n in unique_names:
         clusters[uf.find(n)].append(n)
@@ -97,7 +73,6 @@ if __name__ == "__main__":
     with open(EXTRACTED_PATH) as f:
         data = json.load(f)
 
-    # Collect all entities by type, and all relations, across every paper
     names_by_type = defaultdict(list)
     all_relations = []
 
@@ -107,10 +82,6 @@ if __name__ == "__main__":
         for r in paper["relations"]:
             all_relations.append(r)
 
-    # Defensive fix: the LLM occasionally references an entity inside a
-    # relation that it forgot to also list in that paper's entities array
-    # (e.g. a relation naming "EpisTwin" as a Method that was never declared).
-    # Rather than crash on those, fold them into resolution too.
     declared = {(t, n) for t, names in names_by_type.items() for n in names}
     missing = set()
     for r in all_relations:
@@ -131,14 +102,12 @@ if __name__ == "__main__":
     for etype, names in names_by_type.items():
         print(f"  {etype}: {len(names)} raw, {len(set(names))} unique strings")
 
-    # Build the raw_name -> canonical_name mapping, per type
     rename_map = {}
     for etype, names in names_by_type.items():
-        resolved = resolve_entities_for_type(names)
+        resolved = resolve_entities_for_type(names, etype)
         for raw, canonical in resolved.items():
             rename_map[(etype, raw)] = canonical
 
-    # Build alias lists: canonical_name -> set of raw names that map to it
     aliases = defaultdict(set)
     for (etype, raw), canonical in rename_map.items():
         aliases[(etype, canonical)].add(raw)
@@ -148,7 +117,6 @@ if __name__ == "__main__":
         canonicals = {c for (t, c) in aliases if t == etype}
         print(f"  {etype}: {len(canonicals)} canonical entities")
 
-    # Rewrite relations to use canonical names
     resolved_relations = []
     for r in all_relations:
         resolved_relations.append(

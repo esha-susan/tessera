@@ -75,3 +75,24 @@ to Phase 2 (writing into Neo4j).
 
 **Relationships:** AUTHORED_BY, AFFILIATED_WITH, CITES, PROPOSES, USES_METHOD,
 EVALUATED_ON, ADDRESSES, EXTENDS, APPLIED_TO
+
+## src/ingest/resolve_entities.py
+Merges duplicate entities extracted with different surface names but
+referring to the same thing (e.g. "RAG" and "retrieval-augmented
+generation"). Two-pass approach: exact-match normalization first, then
+embedding similarity (via a local sentence-transformers model) for the
+rest. Outputs canonical entities with alias lists, and rewrites all
+relations to point at canonical names, to `data/resolved.json`.
+**Concept:** embedding similarity should only merge entities where "close
+in meaning" genuinely implies "the same thing" — Method/Task/Dataset
+names qualify, but Paper and Author don't, since two different papers or
+people can sound similar without being the same. Applying fuzzy matching
+there actually merged distinct papers on the first run; fixed by
+restricting embedding-based merging to a specific set of entity types
+and using exact-match only for identity types.
+**Concept:** union-find (disjoint set) — a data structure for clustering
+items that are pairwise similar into groups, handling transitive matches
+(A~B, B~C means all three belong together) without comparing everything
+to everything repeatedly.
+**Concept:** cosine similarity across many pairs at once via a single
+matrix multiply (`embeddings @ embeddings.T`) instead of looping.
