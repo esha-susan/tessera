@@ -10,4 +10,4 @@ pydantic
 tiktoken
 EOF
 pip install -r requirements.txtgoogle-generativeai
-groq
+groqsentence-transformers
