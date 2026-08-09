@@ -96,3 +96,40 @@ items that are pairwise similar into groups, handling transitive matches
 to everything repeatedly.
 **Concept:** cosine similarity across many pairs at once via a single
 matrix multiply (`embeddings @ embeddings.T`) instead of looping.
+
+## src/ingest/write_graph.py
+Writes `data/resolved.json` into Neo4j — one MERGE per entity (keyed on
+canonical_name) and one MERGE per relation. Creates a uniqueness
+constraint per entity label first, so MERGE is genuinely idempotent:
+re-running this script after adding more papers only adds new
+nodes/edges, never duplicates existing ones.
+**Concept:** Cypher can't parameterize relationship types the way it can
+values — the type has to be part of the query string itself. Since our
+relation types come from a fixed, pydantic-validated set (not raw model
+text), we defensively assert each value is in that known set before
+building the query, so this never becomes an actual injection risk.
+**Verified with real Cypher queries in the Neo4j browser** — found a
+genuine 3-hop connection between two different papers (different author
+teams) both addressing "statute retrieval," reachable only by walking
+Author → Paper → Task ← Paper ← Author. This is the core thing plain
+vector search over abstracts would likely miss.
+
+## src/ingest/build_vector_index.py
+Embeds each paper's title+abstract (one chunk per paper, using the same
+sentence-transformers model as entity resolution) and stores it in a
+`paper_chunks` Postgres table alongside a pgvector HNSW index. Uses
+`arxiv_id` as `chunk_id` — the shared key between this table and the
+Neo4j graph, so later a vector search hit can be traced back into the
+graph, and vice versa.
+**Concept:** `ON CONFLICT DO UPDATE` (Postgres) is the same idempotency
+idea as Neo4j's `MERGE` — re-running ingestion updates existing rows
+rather than duplicating them.
+**Concept:** pgvector's `<=>` operator is cosine *distance*; subtracting
+from 1 converts it to a more intuitive similarity score. Ordering by
+`<=>` is what actually uses the HNSW index.
+
+## src/ingest/test_search.py
+Quick manual check: embeds a natural-language question, finds the
+closest chunks by cosine similarity. Verified good results — a query
+about multi-hop QA correctly surfaced the most topically relevant papers,
+confirming the embedding + index pipeline works end to end.
