@@ -133,3 +133,44 @@ Quick manual check: embeds a natural-language question, finds the
 closest chunks by cosine similarity. Verified good results — a query
 about multi-hop QA correctly surfaced the most topically relevant papers,
 confirming the embedding + index pipeline works end to end.
+
+## src/retrieval/router.py
+Classifies an incoming question as "graph", "vector", or "both", using a
+few-shot prompt + strict JSON schema (same validate/retry pattern as
+extraction). If the model's confidence is below a threshold, forces
+"both" rather than guessing — runs both retrieval paths and merges,
+instead of risking a wrong single-path answer. Verified against 3 test
+questions — routed correctly (single-paper fact -> vector, relationship
+question -> graph).
+**Concept:** few-shot prompting — showing the model 2-3 worked examples
+of the exact input/output shape wanted, before the real question,
+noticeably improves classification reliability over describing the task
+in words alone.
+**Concept:** fail toward safety, not toward silence — if the router call
+itself errors out, default to "both" rather than crashing or returning
+nothing, so a router failure never means the user gets no answer.
+
+## src/retrieval/vector_search.py
+Reusable version of the earlier test search — embeds a query, returns
+the top-k most similar chunks with similarity scores. Used by the router
+for the "vector" path.
+
+## src/retrieval/graph_search.py
+The graph path: one LLM call extracts the entity + picks a query type
+from a fixed 3-template library (neighbors / extends_chain /
+shared_task) — never freeform Cypher. The extracted entity name is then
+resolved against real graph node names using substring match first,
+falling back to embedding similarity for looser phrasing.
+**Concept:** substring matching handles cases embedding similarity
+misses — e.g. "LegalMALR" (short) vs. the full paper title containing it
+scored below the embedding threshold, but is trivially caught by a
+literal substring check. Cheap checks before expensive ones.
+**Concept:** few-shot examples need to cover every question *shape* you
+care about, not just be present in general — the shared_task template
+kept failing (extracting the wrong entity, e.g. "LegalMALR" instead of
+the actual task "statute retrieval") until an example matching that
+exact shape was added to the prompt. Description of the rule in words
+wasn't enough; the model needed to see the pattern once.
+**Verified**: all 3 query types (neighbors, extends_chain, shared_task)
+correctly resolve entities and return results matching the manual Cypher
+queries run earlier in the Neo4j browser.
