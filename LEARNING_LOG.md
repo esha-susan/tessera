@@ -28,12 +28,1122 @@ LLM provider is set in `.env` (Groq right now) and returns plain text.
 never talks to the Groq/Gemini/Claude SDK directly, so switching providers
 means changing one `.env` value, not the codebase.
 
-## src/ingest/fetch_papers.py
-Queries arXiv's public API for papers matching a search term, pulls out
-title, abstract, authors, and arXiv id for each, saves them to
-`data/raw_papers.json`.
-**Concept:** arXiv's API returns XML (Atom format), not JSON — parsed with
-Python's built-in `xml.etree.ElementTree`.
+# Learning Log 01 — arXiv Paper Ingestion
+
+**File:** `arxiv_loader.py`
+**Purpose:** Fetch research papers from arXiv and save their basic metadata as JSON.
+
+---
+
+## 1. Where does this file fit in the project?
+
+This is the **data ingestion stage** of the Knowledge Graph RAG system.
+
+Before we can build a knowledge graph, we need research papers as our source data.
+
+The overall flow starts approximately like this:
+
+```text
+arXiv
+   ↓
+arXiv API
+   ↓
+arxiv_loader.py
+   ↓
+raw_papers.json
+   ↓
+LLM-based information extraction
+   ↓
+Structured entities and relationships
+   ↓
+Knowledge Graph
+```
+
+So this file **does not build the knowledge graph**.
+
+Its job is simply to collect relevant research papers and store their basic information in a clean format that later stages can process.
+
+---
+
+# 2. What does the file do?
+
+The file performs five main tasks:
+
+1. Defines a search query for relevant arXiv papers.
+2. Sends the query to the arXiv API.
+3. Receives the search results as XML.
+4. Extracts useful information from each paper.
+5. Saves the extracted information to `data/raw_papers.json`.
+
+The information extracted for each paper is:
+
+```text
+arXiv ID
+Title
+Abstract
+Authors
+Publication date
+```
+
+---
+
+# 3. Imports
+
+```python
+import json
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
+```
+
+Each module has a different purpose.
+
+### `json`
+
+Python's built-in JSON module.
+
+It is used later to save our list of paper dictionaries into:
+
+```text
+data/raw_papers.json
+```
+
+---
+
+### `urllib.parse`
+
+Used to encode the search query so that it can safely be included in a URL.
+
+For example, a query containing spaces and special characters needs to be converted into a URL-safe representation.
+
+This is done using:
+
+```python
+urllib.parse.quote(query)
+```
+
+---
+
+### `urllib.request`
+
+Used to make an HTTP request to the arXiv API.
+
+The important operation is:
+
+```python
+urllib.request.urlopen(url)
+```
+
+This allows our Python program to communicate with the arXiv server.
+
+---
+
+### `xml.etree.ElementTree`
+
+The arXiv API returns its results as **XML**, rather than JSON.
+
+`ElementTree` allows Python to parse that XML and navigate through elements such as:
+
+```text
+entry
+title
+summary
+author
+published
+id
+```
+
+We import it as:
+
+```python
+import xml.etree.ElementTree as ET
+```
+
+so that we can use the shorter name `ET`.
+
+---
+
+# 4. arXiv API endpoint
+
+```python
+ARXIV_API = "http://export.arxiv.org/api/query"
+```
+
+An API is an interface that allows one program to communicate with another service.
+
+Instead of manually opening arXiv in a browser and searching for papers, our Python program sends a request directly to the arXiv API.
+
+Conceptually:
+
+```text
+Our Python program
+        ↓
+    HTTP request
+        ↓
+     arXiv API
+        ↓
+    XML response
+        ↓
+Our Python program
+```
+
+---
+
+# 5. XML namespaces
+
+```python
+NS = {
+    "atom": "http://www.w3.org/2005/Atom",
+    "arxiv": "http://arxiv.org/schemas/atom",
+}
+```
+
+The arXiv response uses XML namespaces.
+
+A namespace helps distinguish XML elements that may have the same name but belong to different XML vocabularies.
+
+The important namespace here is:
+
+```text
+http://www.w3.org/2005/Atom
+```
+
+which is given the shorter name:
+
+```text
+atom
+```
+
+This allows us to write:
+
+```python
+entry.find("atom:title", NS)
+```
+
+instead of dealing with the full namespace every time.
+
+---
+
+# 6. Search query
+
+```python
+SEARCH_QUERY = (
+    'cat:cs.CL AND '
+    '(abs:"retrieval augmented generation" '
+    'OR abs:"dense retrieval" '
+    'OR abs:"knowledge graph")'
+)
+```
+
+This defines which papers we want to retrieve.
+
+### `cat:cs.CL`
+
+Restricts the search to the arXiv category:
+
+```text
+cs.CL
+```
+
+which is **Computation and Language**, a computer science category related to NLP and language technologies.
+
+### `abs:`
+
+Means that the search should consider the paper's abstract.
+
+For example:
+
+```text
+abs:"knowledge graph"
+```
+
+looks for "knowledge graph" in the abstract.
+
+### `OR`
+
+Means that a paper can match any of the listed topics:
+
+```text
+retrieval augmented generation
+OR
+dense retrieval
+OR
+knowledge graph
+```
+
+### `AND`
+
+The paper must also belong to the specified category.
+
+Therefore the query roughly means:
+
+> Find relevant papers in the Computation and Language category whose abstracts mention retrieval-augmented generation, dense retrieval, or knowledge graphs.
+
+---
+
+# 7. Maximum number of results
+
+```python
+MAX_RESULTS = 20
+```
+
+This limits the number of papers retrieved to 20.
+
+It prevents the ingestion step from downloading an unnecessarily large number of papers.
+
+---
+
+# 8. `fetch_papers()` function
+
+```python
+def fetch_papers(query: str, max_results: int) -> list[dict]:
+```
+
+This function is responsible for the entire arXiv retrieval process.
+
+### Inputs
+
+```text
+query
+```
+
+The arXiv search query.
+
+```text
+max_results
+```
+
+The maximum number of papers to retrieve.
+
+### Type hints
+
+```python
+query: str
+```
+
+means `query` is expected to be a string.
+
+```python
+max_results: int
+```
+
+means `max_results` is expected to be an integer.
+
+```python
+-> list[dict]
+```
+
+means the function is expected to return a list of dictionaries.
+
+For example:
+
+```python
+[
+    {
+        "title": "Paper 1",
+        "authors": ["Alice", "Bob"]
+    },
+    {
+        "title": "Paper 2",
+        "authors": ["Charlie"]
+    }
+]
+```
+
+---
+
+# 9. Constructing the API parameters
+
+```python
+params = (
+    f"search_query={urllib.parse.quote(query)}"
+    f"&start=0"
+    f"&max_results={max_results}"
+    f"&sortBy=relevance"
+)
+```
+
+This constructs the parameters that will be attached to the API URL.
+
+There are four important parameters.
+
+### `search_query`
+
+Contains the encoded search query.
+
+```python
+urllib.parse.quote(query)
+```
+
+converts the query into a URL-safe form.
+
+### `start=0`
+
+Starts retrieving results from the beginning of the result set.
+
+### `max_results`
+
+Specifies how many papers should be returned.
+
+### `sortBy=relevance`
+
+Requests that arXiv order the results according to relevance.
+
+---
+
+# 10. Constructing the final URL
+
+```python
+url = f"{ARXIV_API}?{params}"
+```
+
+This combines:
+
+```text
+API endpoint
++
+query parameters
+```
+
+into one URL.
+
+Conceptually:
+
+```text
+http://export.arxiv.org/api/query?
+    search_query=...
+    &start=0
+    &max_results=20
+    &sortBy=relevance
+```
+
+This is the URL that Python will request.
+
+---
+
+# 11. Sending the HTTP request
+
+```python
+with urllib.request.urlopen(url) as response:
+    raw_xml = response.read()
+```
+
+This sends the request to arXiv.
+
+The server returns an HTTP response containing XML.
+
+```python
+response
+```
+
+represents that response.
+
+Then:
+
+```python
+response.read()
+```
+
+reads the actual response content.
+
+The XML is stored in:
+
+```python
+raw_xml
+```
+
+The process is:
+
+```text
+Python
+  ↓
+HTTP request
+  ↓
+arXiv
+  ↓
+XML response
+  ↓
+raw_xml
+```
+
+---
+
+# 12. Why use `with`?
+
+```python
+with urllib.request.urlopen(url) as response:
+```
+
+`with` is Python's context-manager syntax.
+
+It ensures that the network resource is properly cleaned up after it is used.
+
+Conceptually:
+
+```text
+Open connection
+      ↓
+Use connection
+      ↓
+Close connection
+```
+
+The same idea is used later when opening the JSON file.
+
+---
+
+# 13. Parsing the XML
+
+```python
+root = ET.fromstring(raw_xml)
+```
+
+At this point, `raw_xml` is raw XML data.
+
+`ET.fromstring()` parses it into an XML tree.
+
+Conceptually:
+
+```text
+Raw XML
+   ↓
+ElementTree parser
+   ↓
+Structured XML tree
+```
+
+Now Python can search for elements such as:
+
+```text
+entry
+title
+summary
+author
+published
+id
+```
+
+---
+
+# 14. Create an empty paper list
+
+```python
+papers = []
+```
+
+This list will eventually contain one dictionary for every retrieved paper.
+
+Initially:
+
+```python
+papers = []
+```
+
+After processing papers:
+
+```python
+papers = [
+    {
+        "arxiv_id": "...",
+        "title": "...",
+        "abstract": "...",
+        "authors": [...],
+        "published": "..."
+    },
+    ...
+]
+```
+
+---
+
+# 15. Process every paper
+
+```python
+for entry in root.findall("atom:entry", NS):
+```
+
+The arXiv XML response contains multiple `<entry>` elements.
+
+Each `<entry>` represents one paper.
+
+So this loop means:
+
+> For every paper returned by arXiv, extract its information.
+
+Conceptually:
+
+```text
+XML response
+    │
+    ├── entry → Paper 1
+    ├── entry → Paper 2
+    ├── entry → Paper 3
+    └── ...
+```
+
+The loop processes each one.
+
+---
+
+# 16. Extracting the arXiv ID
+
+```python
+arxiv_id = entry.find("atom:id", NS).text.strip().split("/abs/")[-1]
+```
+
+The API gives us an ID URL such as:
+
+```text
+http://arxiv.org/abs/2606.13916
+```
+
+We want only:
+
+```text
+2606.13916
+```
+
+The operations happen in sequence:
+
+```python
+entry.find("atom:id", NS)
+```
+
+Finds the `<id>` element.
+
+```python
+.text
+```
+
+gets its text.
+
+```python
+.strip()
+```
+
+removes unnecessary whitespace.
+
+```python
+.split("/abs/")
+```
+
+splits the URL around `/abs/`.
+
+Finally:
+
+```python
+[-1]
+```
+
+takes the last part, which is the actual arXiv ID.
+
+---
+
+# 17. Extracting the title
+
+```python
+title = entry.find("atom:title", NS).text.strip().replace("\n", " ")
+```
+
+This finds the title.
+
+The operations are:
+
+```text
+find title
+   ↓
+get text
+   ↓
+remove surrounding whitespace
+   ↓
+replace newlines with spaces
+```
+
+The newline replacement makes the stored title cleaner.
+
+Instead of:
+
+```text
+Knowledge Graph
+for Retrieval Augmented Generation
+```
+
+we get:
+
+```text
+Knowledge Graph for Retrieval Augmented Generation
+```
+
+---
+
+# 18. Extracting the abstract
+
+```python
+abstract = entry.find("atom:summary", NS).text.strip().replace("\n", " ")
+```
+
+In the arXiv API, the `<summary>` field contains the paper's abstract.
+
+So this extracts and cleans the abstract.
+
+The abstract is especially important for the later stages because the LLM will eventually use the paper information to extract structured knowledge.
+
+---
+
+# 19. Extracting the publication date
+
+```python
+published = entry.find("atom:published", NS).text.strip()[:10]
+```
+
+The API may return a full timestamp such as:
+
+```text
+2026-06-11T12:34:56Z
+```
+
+The code only needs the date:
+
+```text
+2026-06-11
+```
+
+Python slicing:
+
+```python
+[:10]
+```
+
+takes the first ten characters.
+
+---
+
+# 20. Extracting authors
+
+```python
+authors = [
+    author.find("atom:name", NS).text
+    for author in entry.findall("atom:author", NS)
+]
+```
+
+This is a list comprehension.
+
+It is equivalent to:
+
+```python
+authors = []
+
+for author in entry.findall("atom:author", NS):
+    name = author.find("atom:name", NS).text
+    authors.append(name)
+```
+
+If the paper has:
+
+```text
+Alice
+Bob
+Charlie
+```
+
+then:
+
+```python
+authors
+```
+
+becomes:
+
+```python
+["Alice", "Bob", "Charlie"]
+```
+
+---
+
+# 21. Creating our own paper representation
+
+```python
+papers.append(
+    {
+        "arxiv_id": arxiv_id,
+        "title": title,
+        "abstract": abstract,
+        "authors": authors,
+        "published": published,
+    }
+)
+```
+
+This is an important transformation.
+
+The arXiv API gives us XML.
+
+We don't want to pass the entire XML structure through the rest of the project.
+
+Instead, we convert each paper into a simple Python dictionary.
+
+Each paper now looks like:
+
+```python
+{
+    "arxiv_id": "2606.13916",
+    "title": "...",
+    "abstract": "...",
+    "authors": ["Author 1", "Author 2"],
+    "published": "2026-06-11"
+}
+```
+
+This is essentially a **normalization step** from the API's XML representation into the representation used by our project.
+
+---
+
+# 22. Return the papers
+
+```python
+return papers
+```
+
+Once all entries have been processed, the function returns the complete list.
+
+The result is:
+
+```python
+[
+    paper1,
+    paper2,
+    paper3,
+    ...
+]
+```
+
+where every paper is represented by a dictionary.
+
+---
+
+# 23. The `__main__` block
+
+The actual Python code should be:
+
+```python
+if __name__ == "__main__":
+```
+
+This means:
+
+> Run the following code only when this Python file is executed directly.
+
+For example:
+
+```bash
+python arxiv_loader.py
+```
+
+will execute the code inside the block.
+
+But if another Python file does:
+
+```python
+from arxiv_loader import fetch_papers
+```
+
+the function can be imported without automatically executing the code that downloads papers.
+
+This makes the file reusable as a Python module.
+
+---
+
+# 24. Calling the function
+
+```python
+papers = fetch_papers(SEARCH_QUERY, MAX_RESULTS)
+```
+
+This passes:
+
+```text
+SEARCH_QUERY
+      ↓
+fetch_papers()
+      ↓
+MAX_RESULTS
+```
+
+The function then:
+
+```text
+Build URL
+   ↓
+Call arXiv
+   ↓
+Receive XML
+   ↓
+Parse XML
+   ↓
+Process every paper
+   ↓
+Create dictionaries
+   ↓
+Return list
+```
+
+The returned list is stored in:
+
+```python
+papers
+```
+
+---
+
+# 25. Saving the results
+
+```python
+with open("data/raw_papers.json", "w") as f:
+    json.dump(papers, f, indent=2)
+```
+
+This writes the Python list to a JSON file.
+
+The file is:
+
+```text
+data/raw_papers.json
+```
+
+The `"w"` means the file is opened in write mode.
+
+If it doesn't exist, it will be created.
+
+---
+
+## `json.dump()`
+
+```python
+json.dump(papers, f, indent=2)
+```
+
+converts the Python object into JSON and writes it to the file.
+
+For example:
+
+```python
+papers = [
+    {
+        "title": "Knowledge Graph RAG",
+        "authors": ["Alice"]
+    }
+]
+```
+
+becomes:
+
+```json
+[
+  {
+    "title": "Knowledge Graph RAG",
+    "authors": [
+      "Alice"
+    ]
+  }
+]
+```
+
+`indent=2` makes the JSON human-readable.
+
+---
+
+# 26. Displaying the first three papers
+
+```python
+for paper in papers[:3]:
+    print(f"  - {paper['title']} ({paper['arxiv_id']})")
+```
+
+`papers[:3]` selects the first three papers.
+
+The code then prints their titles and IDs.
+
+This isn't part of the actual data-processing pipeline.
+
+It is mainly a quick **sanity check** to confirm that papers were successfully retrieved.
+
+---
+
+# 27. Complete data flow
+
+The most important mental model for this file is:
+
+```text
+                 SEARCH QUERY
+                      │
+                      ▼
+              ┌──────────────┐
+              │  arXiv API   │
+              └──────┬───────┘
+                     │
+                     │ HTTP request
+                     ▼
+                XML response
+                     │
+                     ▼
+             ElementTree parser
+                     │
+                     ▼
+              <entry> elements
+                     │
+          ┌──────────┼──────────┐
+          ▼          ▼          ▼
+        Paper 1    Paper 2    Paper 3
+          │          │          │
+          ▼          ▼          ▼
+       Extract    Extract    Extract
+       metadata   metadata   metadata
+          │          │          │
+          └──────────┼──────────┘
+                     ▼
+            Python dictionaries
+                     │
+                     ▼
+              papers list
+                     │
+                     ▼
+           json.dump() / JSON
+                     │
+                     ▼
+           data/raw_papers.json
+```
+
+---
+
+# 28. Where this fits into Tessera
+
+This file represents **data acquisition**.
+
+It does not yet understand the research knowledge contained in the papers.
+
+For example, suppose an abstract says:
+
+> "We propose a retrieval augmented generation system using a knowledge graph and evaluate it on the HotpotQA dataset."
+
+This file simply stores that as text:
+
+```python
+{
+    "abstract": "We propose a retrieval augmented generation..."
+}
+```
+
+A later component can use an LLM to turn that unstructured text into structured knowledge such as:
+
+```text
+Paper
+ ├── uses → Retrieval Augmented Generation
+ ├── uses → Knowledge Graph
+ ├── evaluated_on → HotpotQA
+ └── proposes → Some Method
+```
+
+That structured information is what eventually becomes useful for constructing the knowledge graph.
+
+So the distinction is:
+
+```text
+THIS FILE
+
+Collect raw information
+        ↓
+        JSON
+
+
+LATER FILES
+
+Understand information
+        ↓
+Extract entities/relationships
+        ↓
+Knowledge Graph
+```
+
+---
+
+# 29. Important concepts learned from this file
+
+| Concept            | Meaning                                                  |
+| ------------------ | -------------------------------------------------------- |
+| API                | Interface allowing programs to communicate               |
+| HTTP request       | Request sent from our program to a server                |
+| XML                | Structured data format returned by arXiv                 |
+| XML parser         | Converts XML into a structure Python can navigate        |
+| Namespace          | Identifies the vocabulary an XML element belongs to      |
+| URL encoding       | Converts text into a URL-safe representation             |
+| JSON               | Structured data format used to store/transmit data       |
+| List comprehension | Compact way of constructing a list                       |
+| Type hint          | Indicates expected types of function inputs/outputs      |
+| Context manager    | Safely manages resources such as files/connections       |
+| `__main__`         | Allows code to run only when a file is executed directly |
+
+---
+
+# 30. Interview explanation
+
+If asked:
+
+### "What does your arXiv ingestion module do?"
+
+A good explanation is:
+
+> "The ingestion module queries the arXiv API for research papers relevant to our RAG and knowledge-graph domain. Since the API returns Atom XML, I parse the response using Python's ElementTree, extract metadata such as the paper ID, title, abstract, authors, and publication date, normalize each paper into a Python dictionary, and persist the collection as JSON for downstream knowledge extraction."
+
+---
+
+# 31. Questions an interviewer could ask
+
+### Q1. Why use an API instead of scraping arXiv?
+
+Because the API provides a structured and programmatic way to retrieve paper metadata without parsing arbitrary webpage HTML.
+
+### Q2. Why is the response XML?
+
+The arXiv API exposes its results using the Atom XML format, so the application uses `ElementTree` to parse it.
+
+### Q3. Why do you encode the query?
+
+Because the query becomes part of a URL, and spaces/special characters need URL encoding.
+
+### Q4. Why save the papers as JSON?
+
+JSON is simple, human-readable, and easy for Python and downstream processing components to consume.
+
+### Q5. Why don't you create the knowledge graph here?
+
+This module is responsible only for **data acquisition**. Knowledge extraction is a separate stage so that ingestion and semantic processing remain separated.
+
+### Q6. What information do you extract?
+
+```text
+arXiv ID
+Title
+Abstract
+Authors
+Publication date
+```
+
+### Q7. What is the output of `fetch_papers()`?
+
+A:
+
+```python
+list[dict]
+```
+
+where each dictionary represents one paper.
+
+---
+
+# 32. The one-sentence takeaway
+
+> **`arxiv_loader.py` converts relevant research papers from the arXiv API's XML format into a clean list of Python dictionaries and persists them as `raw_papers.json`, providing the raw input for the later knowledge-extraction and knowledge-graph stages.**
 
 ## data/raw_papers.json
 Raw output of `fetch_papers.py` — the input to Phase 1's extraction step.
@@ -191,3 +1301,28 @@ sources it's provably not allowed to invent."
 **Verified**: all 3 test questions produced correctly-cited, accurate
 answers on the first attempt, across both routes and a mixed
 graph+vector scenario.
+
+## src/retrieval/vector_search.py
+Reusable version of the earlier test search — embeds a query, returns
+the top-k most similar chunks with similarity scores. Used by the router
+for the "vector" path.
+
+## src/retrieval/graph_search.py
+The graph path: one LLM call extracts the entity + picks a query type
+from a fixed 3-template library (neighbors / extends_chain /
+shared_task) — never freeform Cypher. The extracted entity name is then
+resolved against real graph node names using substring match first,
+falling back to embedding similarity for looser phrasing.
+**Concept:** substring matching handles cases embedding similarity
+misses — e.g. "LegalMALR" (short) vs. the full paper title containing it
+scored below the embedding threshold, but is trivially caught by a
+literal substring check. Cheap checks before expensive ones.
+**Concept:** few-shot examples need to cover every question *shape* you
+care about, not just be present in general — the shared_task template
+kept failing (extracting the wrong entity, e.g. "LegalMALR" instead of
+the actual task "statute retrieval") until an example matching that
+exact shape was added to the prompt. Description of the rule in words
+wasn't enough; the model needed to see the pattern once.
+**Verified**: all 3 query types (neighbors, extends_chain, shared_task)
+correctly resolve entities and return results matching the manual Cypher
+queries run earlier in the Neo4j browser.
